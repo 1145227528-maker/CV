@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>嵇鸿轩 JI HONGXUAN · 学术简历</title>
+<meta name="description" content="嵇鸿轩学术简历——美术史研究者、文化遗产田野工作者、陶瓷雕塑创作者。教育经历、论文发表、研究项目、田野实践与获奖记录。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0c0a; --bg-2:#14120f; --panel:#1a1815;
+  --line:rgba(201,169,106,.25); --line-soft:rgba(201,169,106,.12);
+  --gold:#c9a96a; --gold-bright:#e2c68f;
+  --ink:#e8e2d6; --ink-dim:#9a938a;
+  --serif:'Noto Serif SC','Songti SC','SimSun',serif;
+  --latin:'Cormorant Garamond',Georgia,serif;
+  --pcap:'嵇鸿轩 · 一九九九';
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-weight:300;line-height:1.85;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+::selection{background:var(--gold);color:#0d0c0a}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#0a0908}
+::-webkit-scrollbar-thumb{background:#3a332a;border-radius:6px}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:0 5vw;height:70px;background:linear-gradient(to bottom,rgba(13,12,10,.94),rgba(13,12,10,.6) 75%,transparent);
+  backdrop-filter:blur(6px);transition:.4s}
+nav.scrolled{background:rgba(13,12,10,.96);border-bottom:1px solid var(--line-soft)}
+.brand{font-size:19px;letter-spacing:.32em;font-weight:400;color:var(--ink);white-space:nowrap}
+.brand em{font-family:var(--latin);font-style:italic;color:var(--gold);font-size:14px;letter-spacing:.12em;margin-left:9px}
+.nav-links{display:flex;gap:24px;font-size:13.5px;letter-spacing:.16em;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{color:var(--ink-dim);transition:.3s;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--gold-bright);border-bottom-color:var(--gold)}
+/* ---------- language switch ---------- */
+.lang-sw{display:flex;align-items:center;gap:7px;flex:none;margin-left:4px}
+.lang-sw button{background:none;border:1px solid var(--line-soft);color:var(--ink-dim);padding:5px 13px;
+  border-radius:100px;cursor:pointer;transition:.3s;font-size:12.5px;letter-spacing:.12em;line-height:1.6}
+.lang-sw button:hover{color:var(--gold-bright);border-color:var(--gold)}
+.lang-sw button.on{background:var(--gold);border-color:var(--gold);color:#0d0c0a}
+.lang-sw button.on:hover{color:#0d0c0a}
+html[lang="en"] .sec-tag{display:none}
+html[lang="en"] .grp-h .en{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:130px 6vw 90px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 50% at 78% 30%,rgba(201,169,106,.07),transparent 60%),
+             radial-gradient(ellipse 50% 60% at 12% 80%,rgba(201,169,106,.05),transparent 60%)}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .85fr;gap:7vw;align-items:center;max-width:1360px;margin:0 auto;width:100%}
+.hero-kicker{font-family:var(--latin);font-style:italic;letter-spacing:.42em;color:var(--gold);font-size:14px;text-transform:uppercase}
+.hero h1{font-size:clamp(46px,7vw,88px);font-weight:600;letter-spacing:.22em;margin:20px 0 8px;color:#f2ecdf;line-height:1.25}
+.hero-en{font-family:var(--latin);letter-spacing:.5em;font-size:clamp(14px,1.7vw,19px);color:var(--ink-dim);text-transform:uppercase}
+.hero-role{margin-top:30px;font-size:clamp(16px,1.8vw,20px);letter-spacing:.28em;color:var(--gold-bright)}
+.hero-bio{margin-top:18px;max-width:560px;color:var(--ink-dim);font-size:15px}
+.hero-contact{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px}
+.hero-contact a{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);color:var(--ink);
+  font-size:14px;letter-spacing:.06em;padding:10px 22px;border-radius:100px;transition:.3s}
+.hero-contact a:hover{border-color:var(--gold);color:var(--gold-bright);background:rgba(201,169,106,.06)}
+.hero-contact svg{width:15px;height:15px;stroke:var(--gold);fill:none;stroke-width:1.6;flex:none}
+.hero-stats{margin-top:46px;display:flex;gap:0;border-top:1px solid var(--line-soft);max-width:560px}
+.hstat{flex:1;padding:20px 6px 0;border-left:1px solid var(--line-soft);padding-left:22px}
+.hstat:first-child{border-left:none;padding-left:0}
+.hstat b{display:block;font-family:var(--latin);font-size:clamp(26px,3vw,36px);font-weight:500;color:var(--gold-bright);line-height:1.1}
+.hstat span{font-size:12.5px;letter-spacing:.18em;color:var(--ink-dim)}
+.portrait{position:relative;justify-self:center;width:min(340px,78vw)}
+.portrait img{width:100%;filter:grayscale(22%) contrast(1.03);border:1px solid var(--line);animation:rise 1.4s .2s ease both}
+.portrait::before{content:'';position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--line-soft);z-index:-1}
+.portrait::after{content:var(--pcap);position:absolute;bottom:-42px;right:0;font-size:12.5px;letter-spacing:.24em;color:var(--ink-dim)}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.hero-left>*{animation:rise 1.2s ease both}
+.hero-left>*:nth-child(2){animation-delay:.15s}.hero-left>*:nth-child(3){animation-delay:.25s}
+.hero-left>*:nth-child(4){animation-delay:.35s}.hero-left>*:nth-child(5){animation-delay:.45s}
+.hero-left>*:nth-child(6){animation-delay:.55s}.hero-left>*:nth-child(7){animation-delay:.65s}
+.scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold);
+  font-size:11px;letter-spacing:.4em;animation:float 2.6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+/* ---------- sections ---------- */
+section{padding:110px 5vw;max-width:1280px;margin:0 auto}
+.sec-tag{font-family:var(--latin);font-style:italic;color:var(--gold);letter-spacing:.32em;font-size:14px;text-transform:uppercase}
+.sec-title{font-size:clamp(28px,3.6vw,42px);font-weight:600;letter-spacing:.2em;margin:10px 0 4px;color:#f0e9db}
+.sec-rule{width:56px;height:1px;background:var(--gold);margin-top:22px;opacity:.7}
+.sec-sub{margin-top:16px;color:var(--ink-dim);font-size:14.5px;letter-spacing:.05em;max-width:720px}
+.reveal{opacity:0;transform:translateY(38px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+.hint{font-size:12.5px;letter-spacing:.2em;color:var(--ink-dim);margin-top:14px}
+.hint::before{content:'✦ ';color:var(--gold)}
+.grp{margin-top:64px}
+.grp-h{display:flex;align-items:baseline;gap:18px;margin-bottom:8px}
+.grp-h .zh{font-size:17px;letter-spacing:.3em;color:var(--gold-bright);font-weight:400;white-space:nowrap}
+.grp-h .en{font-family:var(--latin);font-style:italic;font-size:13px;letter-spacing:.2em;color:var(--ink-dim);text-transform:uppercase;white-space:nowrap}
+.grp-h::after{content:'';flex:1;height:1px;background:var(--line-soft)}
+.grp-h .chev{font-size:12px;color:var(--ink-dim);transition:transform .25s;margin-left:2px}
+.grp-h.tg{cursor:pointer;user-select:none}
+.grp-h.tg:hover .zh{color:var(--gold-bright)}
+.grp.fold>.tl,.grp.fold>.train-grid{display:none}
+.grp.fold.open>.tl{display:block}
+.grp.fold.open>.train-grid{display:grid}
+.grp.fold.open .chev{transform:rotate(180deg)}
+
+/* ---------- education ---------- */
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
+.edu-card{background:var(--panel);border:1px solid var(--line-soft);padding:30px 26px;cursor:pointer;position:relative;
+  transition:.35s;display:flex;flex-direction:column}
+.edu-card:hover{border-color:var(--gold);transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.edu-card .y{font-family:var(--latin);color:var(--gold);letter-spacing:.14em;font-size:16px}
+.edu-card h3{font-size:19px;font-weight:400;letter-spacing:.06em;margin:10px 0 3px;color:#efe8da}
+.edu-card .deg{font-size:13.5px;color:var(--gold-bright);letter-spacing:.12em}
+.edu-card p{font-size:13.5px;color:var(--ink-dim);margin-top:12px;flex:1}
+.edu-card .more{margin-top:18px;font-size:12.5px;letter-spacing:.22em;color:var(--gold);transition:.3s}
+.edu-card:hover .more{color:var(--gold-bright);letter-spacing:.28em}
+.fellow{margin-top:34px;border:1px dashed var(--line);padding:20px 26px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center}
+.fellow .lab{font-size:13px;letter-spacing:.22em;color:var(--gold);flex:none}
+.fellow span{font-size:13.5px;color:var(--ink-dim);letter-spacing:.05em}
+
+/* ---------- projects & practice ---------- */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:54px}
+.proj-card{background:var(--panel);border:1px solid var(--line-soft);padding:32px 30px;cursor:pointer;position:relative;overflow:hidden;transition:.35s}
+.proj-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);opacity:0;transition:.35s}
+.proj-card:hover{border-color:var(--gold);transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.proj-card:hover::before{opacity:1}
+.proj-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.proj-top .y{font-family:var(--latin);color:var(--gold);letter-spacing:.12em;font-size:15px;white-space:nowrap}
+.role{font-size:11.5px;letter-spacing:.16em;color:var(--gold-bright);border:1px solid var(--line);padding:4px 13px;border-radius:100px;white-space:nowrap}
+.proj-card h3{font-size:20px;font-weight:400;letter-spacing:.06em;margin:14px 0 10px;color:#efe8da;line-height:1.5}
+.proj-card p{font-size:14px;color:var(--ink-dim)}
+.proj-card .more{margin-top:16px;font-size:12.5px;letter-spacing:.22em;color:var(--gold)}
+
+/* ---------- awards timeline ---------- */
+.tl{position:relative;margin-top:26px;padding-left:40px;max-width:1000px}
+.tl::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,var(--gold),rgba(201,169,106,.06))}
+.tl-item{position:relative;padding:0 0 14px}
+.tl-row{display:grid;grid-template-columns:96px 1fr auto;gap:20px;align-items:baseline;padding:16px 18px;cursor:pointer;
+  border:1px solid transparent;transition:.3s;background:transparent}
+.tl-row:hover{background:var(--panel);border-color:var(--line-soft);transform:translateX(6px)}
+.tl-item::before{content:'';position:absolute;left:-39px;top:26px;width:9px;height:9px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--gold);transition:.3s;z-index:1}
+.tl-item:hover::before{background:var(--gold)}
+.tl-row .y{font-family:var(--latin);color:var(--gold);letter-spacing:.1em;font-size:15.5px}
+.tl-row h4{font-size:16px;font-weight:400;letter-spacing:.04em;color:#eee7d9;line-height:1.6}
+.tl-row h4 b{color:var(--gold-bright);font-weight:400}
+.tl-row h4 em{font-style:normal;color:var(--ink-dim);font-size:13.5px;display:block;margin-top:2px;letter-spacing:.04em}
+.tl-row .more{font-size:12px;letter-spacing:.2em;color:var(--ink-dim);transition:.3s;white-space:nowrap}
+.tl-row:hover .more{color:var(--gold)}
+
+/* ---------- training grid ---------- */
+.train-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:10px}
+.train-item{background:var(--panel);border:1px solid var(--line-soft);padding:22px 24px;cursor:pointer;transition:.3s;display:flex;gap:18px;align-items:baseline}
+.train-item:hover{border-color:var(--gold);transform:translateY(-4px)}
+.train-item .y{font-family:var(--latin);color:var(--gold);font-size:14.5px;letter-spacing:.08em;white-space:nowrap;min-width:86px}
+.train-item h4{font-size:15.5px;font-weight:400;letter-spacing:.03em;color:#eae3d5;line-height:1.65}
+.train-item .more{margin-left:auto;font-size:12px;color:var(--ink-dim);white-space:nowrap;letter-spacing:.15em}
+.train-item:hover .more{color:var(--gold)}
+
+/* ---------- publications ---------- */
+.pub-group{margin-top:48px}
+.pub-group h3{font-size:15px;letter-spacing:.3em;color:var(--gold);font-weight:400;margin-bottom:18px;display:flex;align-items:center;gap:16px}
+.pub-group h3::after{content:'';flex:1;height:1px;background:var(--line-soft)}
+.pub{display:grid;grid-template-columns:1fr auto;gap:8px 20px;align-items:baseline;padding:15px 18px;cursor:pointer;
+  border:1px solid transparent;transition:.3s}
+.pub:hover{background:var(--panel);border-color:var(--line-soft)}
+.pub h4{font-size:15.5px;font-weight:400;color:#eae3d5;letter-spacing:.02em;line-height:1.7}
+.pub h4 em{font-family:var(--latin);font-style:italic;color:var(--gold-bright)}
+.pub h4 .rep{display:inline-block;font-style:normal;font-family:var(--serif);font-size:11.5px;letter-spacing:.14em;color:var(--gold-bright);
+  border:1px solid var(--line);padding:2px 10px;border-radius:100px;margin-left:10px;vertical-align:2px}
+.pub p{grid-column:1;font-size:13px;color:var(--ink-dim)}
+.pub .more{font-size:12px;letter-spacing:.2em;color:var(--ink-dim);white-space:nowrap;transition:.3s}
+.pub:hover .more{color:var(--gold)}
+
+/* ---------- skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:52px}
+.skill-card{background:var(--panel);border:1px solid var(--line-soft);padding:28px 28px;transition:.3s}
+.skill-card:hover{border-color:var(--gold)}
+.skill-card h3{font-size:15px;letter-spacing:.24em;color:var(--gold);font-weight:400;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.skill-card h3 .no{font-family:var(--latin);font-style:italic;font-size:19px;color:var(--gold-bright)}
+.skill-card li{list-style:none;font-size:14px;color:var(--ink);padding:7px 0 7px 18px;position:relative;border-bottom:1px solid rgba(201,169,106,.07)}
+.skill-card li:last-child{border-bottom:none}
+.skill-card li::before{content:'·';position:absolute;left:2px;color:var(--gold);font-weight:700}
+.skill-card li b{font-weight:400;color:var(--gold-bright)}
+.cert-strip{margin-top:26px;border:1px dashed var(--line);padding:20px 26px}
+.cert-strip .lab{font-size:13px;letter-spacing:.22em;color:var(--gold);margin-bottom:12px}
+.cert-strip .chips{display:flex;flex-wrap:wrap;gap:10px}
+.cert-strip .chips span{font-size:13px;letter-spacing:.06em;color:var(--ink-dim);border:1px solid var(--line-soft);padding:6px 16px;border-radius:100px;transition:.3s}
+.cert-strip .chips span:hover{color:var(--gold-bright);border-color:var(--gold)}
+
+/* ---------- self assessment ---------- */
+.self-box{margin-top:46px;border:1px solid var(--line-soft);padding:42px 46px;
+  background:linear-gradient(160deg,rgba(26,24,21,.92),rgba(18,16,13,.55));position:relative}
+.self-box::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);opacity:.55}
+.self-box p{font-size:15.5px;line-height:2.05;color:var(--ink);margin-bottom:17px}
+.self-box p.dim{color:var(--ink-dim);font-size:14.5px;margin-bottom:0}
+.self-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.self-tags span{font-size:13px;letter-spacing:.08em;color:var(--ink-dim);border:1px solid var(--line-soft);padding:6px 16px;border-radius:100px}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line-soft);padding:64px 5vw 80px;text-align:center;margin-top:60px}
+footer .name{font-size:22px;letter-spacing:.4em;color:#f0e9db;font-weight:400}
+footer .en{font-family:var(--latin);letter-spacing:.3em;color:var(--gold);font-size:13px;margin-top:8px;text-transform:uppercase}
+footer .contact{margin-top:22px;font-size:14px;color:var(--ink-dim);letter-spacing:.08em;display:flex;gap:30px;justify-content:center;flex-wrap:wrap}
+footer .fin{margin-top:34px;font-size:12.5px;letter-spacing:.34em;color:#5f594f}
+
+/* ---------- detail overlay ---------- */
+.overlay{position:fixed;inset:0;z-index:200;background:rgba(10,9,7,.55);backdrop-filter:blur(8px);
+  display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 4vw 8vh}
+.overlay.open{display:flex;animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.sheet{position:relative;background:linear-gradient(160deg,#191713,#12100d 70%);border:1px solid var(--line);
+  max-width:1060px;width:100%;padding:56px 58px 60px;animation:sheetIn .45s cubic-bezier(.2,.8,.25,1) both}
+@keyframes sheetIn{from{opacity:0;transform:translateY(46px)}to{opacity:1;transform:none}}
+.sheet-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:none;color:var(--gold-bright);font-size:19px;cursor:pointer;transition:.3s;line-height:1}
+.sheet-close:hover{background:var(--gold);color:#0d0c0a;transform:rotate(90deg)}
+.sheet .k{font-family:var(--latin);font-style:italic;color:var(--gold);letter-spacing:.28em;font-size:14px;text-transform:uppercase}
+.sheet h2{font-size:clamp(22px,3vw,32px);font-weight:600;letter-spacing:.08em;color:#f2ecdf;margin:12px 0 6px;line-height:1.5}
+.sheet .meta{display:flex;flex-wrap:wrap;gap:10px 24px;margin:16px 0 6px;font-size:13.5px;color:var(--ink-dim);letter-spacing:.06em}
+.sheet .meta b{color:var(--gold-bright);font-weight:400}
+.sheet-rule{width:52px;height:1px;background:var(--gold);margin:22px 0 26px;opacity:.7}
+.sheet-body{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+.sheet-txt p{font-size:15px;color:var(--ink);margin-bottom:14px}
+.sheet-txt p.dim{color:var(--ink-dim);font-size:14px}
+.sheet-txt ul{margin:6px 0 18px}
+.sheet-txt li{list-style:none;font-size:14.5px;color:var(--ink);padding:8px 0 8px 20px;position:relative;border-bottom:1px solid rgba(201,169,106,.07)}
+.sheet-txt li::before{content:'✦';position:absolute;left:0;top:9px;font-size:10px;color:var(--gold)}
+.sheet-txt .sub{font-size:13px;letter-spacing:.26em;color:var(--gold);margin:24px 0 8px}
+.sheet-txt a.dl{display:inline-flex;align-items:center;gap:8px;margin-top:6px;border:1px solid var(--line);color:var(--gold-bright);
+  font-size:13.5px;letter-spacing:.1em;padding:9px 20px;border-radius:100px;transition:.3s}
+.sheet-txt a.dl:hover{background:var(--gold);color:#0d0c0a}
+.sheet-fig{position:sticky;top:0}
+.sheet-fig img{width:100%;border:1px solid var(--line);cursor:zoom-in;transition:.4s;filter:saturate(.92)}
+.sheet-fig img:hover{filter:brightness(1.06)}
+.sheet-fig figcaption{margin-top:10px;font-size:12.5px;color:var(--ink-dim);letter-spacing:.14em;text-align:center;margin-bottom:18px}
+.sheet-fig .multi{display:grid;grid-template-columns:1fr;gap:8px}
+.tags-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.tags-row span{font-size:12.5px;letter-spacing:.1em;color:var(--ink-dim);border:1px solid var(--line-soft);padding:5px 15px;border-radius:100px}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:300;background:rgba(8,7,5,.94);display:none;align-items:center;justify-content:center;padding:4vh 4vw;cursor:zoom-out}
+.lightbox.open{display:flex;animation:fadeIn .3s ease}
+.lightbox img{max-width:100%;max-height:100%;border:1px solid var(--line)}
+
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:70px}
+  .portrait{order:-1}
+  .edu-grid{grid-template-columns:1fr 1fr}
+  .sheet-body{grid-template-columns:1fr}
+  .sheet-fig{position:static;order:-1}
+  .sheet{padding:46px 30px 50px}
+}
+@media (max-width:720px){
+  .nav-links a{display:none}
+  .edu-grid,.proj-grid,.train-grid,.skill-grid{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:1fr;gap:4px}
+  .tl-row .more{display:none}
+  .hero-stats{flex-wrap:wrap}
+  .hstat{flex:1 1 40%;margin-bottom:14px}
+  .pub{grid-template-columns:1fr}
+  .pub .more{display:none}
+  section{padding:80px 6vw}
+  .self-box{padding:30px 22px}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="brand"><span data-i="brandName">嵇鸿轩</span><em>JI HONGXUAN</em></div>
+  <div class="nav-links">
+    <a href="#about">简介</a><a href="#edu">教育</a><a href="#pub">论文</a><a href="#proj">项目</a><a href="#practice">实践</a>
+    <a href="#award">获奖</a><a href="#train">研修</a><a href="#skill">技能</a><a href="#self">自评</a>
+    <div class="lang-sw">
+      <button type="button" data-lang="zh" class="on">中文</button><button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-kicker">Curriculum Vitae · 个人简历</div>
+      <h1>嵇鸿轩</h1>
+      <div class="hero-en">JI HONGXUAN &nbsp;·&nbsp; b.1999</div>
+      <div class="hero-role">美术史研究者 ✦ 文化遗产田野工作者 ✦ 陶瓷雕塑创作者</div>
+      <p class="hero-bio">以学术研究为主业。历史学起步，美术史研究进阶，近年聚焦物质文化与手工艺、墓葬建筑图像、文化遗产的田野与数字化保护；陶瓷雕塑创作与多语种能力，是这条研究主线的延伸与校验。常驻浙江龙泉，长期从事田野调查与遗产研究。</p>
+      <div class="hero-contact">
+        <a href="tel:+8613302340686"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>+86 133 0234 0686</a>
+        <a href="mailto:kekogen@foxmail.com"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>kekogen@foxmail.com</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>3</b><span>段学历 · 横跨三学科</span></div>
+        <div class="hstat"><b>7</b><span>篇论文 · 5 次会议宣讲</span></div>
+        <div class="hstat"><b>11</b><span>项学术 · 调研类获奖</span></div>
+        <div class="hstat"><b>40+</b><span>竞赛 · 获奖 · 入展</span></div>
+      </div>
+    </div>
+    <figure class="portrait"><img src="assets/portrait.png" alt="嵇鸿轩"></figure>
+  </div>
+  <div class="scroll-hint">SCROLL ↓</div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="reveal">
+    <div class="sec-tag">Profile</div>
+    <h2 class="sec-title">简介</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub" style="margin-top:26px;font-size:15.5px;line-height:2.1">
+      嵇鸿轩，1999 年生，<b style="color:var(--gold-bright);font-weight:400">以学术研究为主业</b>。
+      本科就读历史学，硕士修读美术史研究（澳门科技大学），此后于景德镇陶瓷大学攻读雕塑（第二学士学位），
+      完成<b style="color:var(--gold-bright);font-weight:400">"历史—美术史—创作"</b>的跨学科路径。
+      研究线索集中在三条：澳门墓葬建筑图像与中西视觉交融、粤西与黔东的非遗田野与口述史、景德镇陶瓷手工艺群体的生产与身份。
+      已以独立作者发表期刊论文 2 篇，并在香港岭南大学、英国爱丁堡大学、越南胡志明国家人文社科大学等会议作口头报告 5 次。
+    </p>
+  </div>
+  <div class="fellow reveal">
+    <span class="lab">研究兴趣</span>
+    <span>人类学与田野方法</span><span>物质文化与手工艺</span><span>图像学与视觉分析</span>
+    <span>非遗与口述史</span><span>文化遗产保护</span>
+  </div>
+  <div class="reveal">
+    <p class="sec-sub" style="margin-top:26px;font-size:15px;line-height:2.05">
+      在此之外：2023 年起在浙江龙泉青瓷产地创办个人工作室常驻创作，代表作有《骏骨凝香》《瓦猫》《春日来信》《秘色》《蓝色血液》等，
+      作品入选省级雕塑大展并被艺术馆收藏；日语 N1、英语与拉丁语、苏美尔语、阿卡德语的训练，则让日文史料、国际会议与更古老的材料直接进入我的研究。
+      <span style="color:var(--gold-bright)">创作与技艺于我是加分项而非主线——它们让研究有手感，也让结论能被双手验证。</span>
+    </p>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="edu">
+  <div class="reveal">
+    <div class="sec-tag">Education</div>
+    <h2 class="sec-title">教育经历</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">点击卡片查看关键课程、成绩与学位论文详情</p>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal" data-d="edu1">
+      <div class="y">2024 — 2026</div>
+      <h3>景德镇陶瓷大学</h3>
+      <div class="deg">雕塑 · 第二学士学位</div>
+      <p>美术学院雕塑专业（学制两年）；总学分 61，平均成绩 85.2，GPA 3.52；从研究回到创作，完成"研究者到创作者"的身份叠加。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="edu-card reveal" data-d="edu2">
+      <div class="y">2022 — 2024</div>
+      <h3>澳门科技大学</h3>
+      <div class="deg">美术学（美术史研究）· 硕士</div>
+      <p>THE 251 / QS 464；美术史研究方法、美术史、西方美术史专题、艺术史理论专题；毕业论文《澳门墓葬建筑图像研究》。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="edu-card reveal" data-d="edu3">
+      <div class="y">2018 — 2022</div>
+      <h3>广东石油化工学院</h3>
+      <div class="deg">历史学 · 学士</div>
+      <p>中国通史、世界通史、史学概论；一等奖学金、三好学生、优秀毕业生；系统的史学与田野训练。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section id="pub">
+  <div class="reveal">
+    <div class="sec-tag">Publications</div>
+    <h2 class="sec-title">论文与发表</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">学术成果主线 · 点击条目查看详情（部分附 PDF 原文）</p>
+  </div>
+  <div class="pub-group reveal">
+    <h3>期刊论文</h3>
+    <div class="pub" data-d="pb1b"><h4>《广东张田饼印田野调查——兼论张田饼印图像民俗学解读》<span class="rep">代表作</span></h4><span class="more">详情 →</span>
+      <p>《民艺》2024 年第 1 期（ISSN: 2096-5257）· 独立作者</p></div>
+    <div class="pub" data-d="pb1a"><h4>《茂名市革命遗址"寻访"记》</h4><span class="more">详情 →</span>
+      <p>《炎黄地理》2021 年第 6 期（ISSN: 2095-6185）· 独立作者</p></div>
+  </div>
+  <div class="pub-group reveal">
+    <h3>会议论文 · 口头报告</h3>
+    <div class="pub" data-d="pb6"><h4>《澳门墓葬场存的历史演变及其文明互鉴启示》</h4><span class="more">详情 →</span>
+      <p>"区域国别学·北京论坛 2026" · 北京第二外国语学院区域国别研究中心 · 论文宣讲（2026.9）</p></div>
+    <div class="pub" data-d="pb5"><h4>The Forgotten Emotional Geography: Emotion, Memory and Cross-Cultural Empathy in the Cemeteries and Tombstone Architecture of Modern Macao</h4><span class="more">详情 →</span>
+      <p>第三届全球南方研究国际学术研讨会 · 越南胡志明国家人文社科大学 · 2026</p></div>
+    <div class="pub" data-d="pb4"><h4>Research on Cross-cultural Emotional Identity from Macao Cemetery Architectural Heritage Perspective</h4><span class="more">详情 →</span>
+      <p>英国爱丁堡大学国际移民与跨文化交流学生大会 · 2026 · 口头报告并收录待发于《sine》</p></div>
+    <div class="pub" data-d="pb3"><h4>Space and Culture: A Study on The Historical Evolution of Cemeteries and Tombstone Architecture in Modern Macao</h4><span class="more">详情 →</span>
+      <p>香港岭南大学 Postgraduate Conference 2026 · 摘要已录用 · 口头报告（2026.4）</p></div>
+    <div class="pub" data-d="pb2"><h4>《仪式实践中的共生秩序与认同调适：以贵州印江土家族村落信俗田野调查为例》</h4><span class="more">详情 →</span>
+      <p>"铸牢中华民族共同体意识与乡村振兴"研讨会 · 口头报告 · 2025</p></div>
+  </div>
+  <div class="pub-group reveal">
+    <h3>学位论文</h3>
+    <div class="pub" data-d="pb0"><h4>《澳门墓葬建筑图像研究》（硕士毕业论文）</h4><span class="more">详情 →</span>
+      <p>澳门科技大学 · 美术学硕士（美术史研究）· 对澳门现存 17 座坟场的墓碑建筑作结构、形制与图像的全面考察 · 附图书馆著录与中英文摘要原文</p></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="proj">
+  <div class="reveal">
+    <div class="sec-tag">Research Projects</div>
+    <h2 class="sec-title">研究项目</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">点击项目查看研究问题、分工与成果</p>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card reveal" data-d="proj1">
+      <div class="proj-top"><span class="y">2024</span><span class="role">团队成员</span></div>
+      <h3>南风窗"调研中国"——景德镇陶瓷手工艺从业者研究</h3>
+      <p>《为生产完整的人：后农业模式下景德镇陶瓷手工艺从业者研究》，入围十强并获三等奖、优秀调研记录奖；负责调研框架设计、访谈、实地调研、视频拍摄剪辑与报告撰写的全流程。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="proj-card reveal" data-d="proj2">
+      <div class="proj-top"><span class="y">2022 — 2023</span><span class="role">负责人</span></div>
+      <h3>广东省非遗张田饼印田野调查</h3>
+      <p>对非遗传承人进行访谈与过程记录，对饼印图案进行图像学分析；调查报告获第三届"记录乡土中国"优秀奖，论文发表于《民艺》2024 年第 1 期（代表作）。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="proj-card reveal" data-d="proj3">
+      <div class="proj-top"><span class="y">2020 — 2021</span><span class="role">负责人</span></div>
+      <h3>广东省茂名市革命遗址普查</h3>
+      <p>配合茂名市政府党史地志办完成市区革命遗址普查：测量记录遗址现状、口述史采集与整理，撰写田野调查报告；获大学生创新创业项目校级、省级立项。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRACTICE ================= -->
+<section id="practice">
+  <div class="reveal">
+    <div class="sec-tag">Fieldwork & Practice</div>
+    <h2 class="sec-title">田野与实践</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">田野是研究的现场 · 点击条目查看完整内容</p>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card reveal" data-d="prac2">
+      <div class="proj-top"><span class="y">2024.12 — 2025.01</span><span class="role">编撰成员</span></div>
+      <h3>贵州《村寨志》编撰（印江中尧村）</h3>
+      <p>参与土家族传统村寨田野调查与村寨志编写，从口述、碑刻、图文等多渠道发掘村落历史与民俗，为村落文化建档。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="proj-card reveal" data-d="prac3">
+      <div class="proj-top"><span class="y">2024.08 — 2024.10</span><span class="role">驻留艺术家</span></div>
+      <h3>玉门市博物馆艺术驻留（甘肃）</h3>
+      <p>参与"昌马世瑞"二期项目：对昌马石窟第 2、4 窟壁画进行复原性临摹（扫描采集—走线—填色—泥板做旧），协助整理约 140 ㎡ 壁画资料并参与文化遗产活化，成果将无偿捐赠玉门市博物馆。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="proj-card reveal" data-d="prac4">
+      <div class="proj-top"><span class="y">2022.05 — 2022.07</span><span class="role">实习生</span></div>
+      <h3>茂名市政府党史地志办实习</h3>
+      <p>参与革命遗址田野调查与口述访谈，整理地方史资料；负责翻译近代侵华日军书信日文文献。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+    <div class="proj-card reveal" data-d="prac1">
+      <div class="proj-top"><span class="y">2023.06 — 至今</span><span class="role">创始人</span></div>
+      <h3>龙泉个人陶瓷工作室（浙江）</h3>
+      <p>在青瓷产地龙泉创办个人工作室，常驻进行陶瓷雕塑与器物创作；作品入选省级雕塑大展、全国性美术作品展，并被艺术馆收藏。</p>
+      <div class="more">查看详情 →</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AWARDS ================= -->
+<section id="award">
+  <div class="reveal">
+    <div class="sec-tag">Honors & Awards</div>
+    <h2 class="sec-title">竞赛 · 获奖 · 入展</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">按类别归档 · "文学·翻译"与"艺术·展览·设计"分组点击展开 · 点击条目查看证书与详情</p>
+  </div>
+
+  <div class="grp reveal">
+    <div class="grp-h"><span class="zh">学术 · 研究</span><span class="en">Academic & Research</span></div>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_gq">
+        <span class="y">2026.05</span><h4>第七届"光祈杯"全国高校艺术学科学生论文比赛 本科生组 <b>三等奖</b><em>论文《澳门墓碑建筑图像研究》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_xt26">
+        <span class="y">2026.05</span><h4>第五届"记录乡土中国"暨 2026 寒假大学生民俗文化社会调查 <b>二等奖</b><em>《非马之马：纸马仪式中的马文化重构——基于云南多民族的田野调查报告》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_yn">
+        <span class="y">2026.05</span><h4>云南省民俗学会 2026 年"AI 时代的旅居与民俗"田野调查征稿 <b>三等奖</b><em>《非马之马：纸马仪式中的马文化重构》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_xt25">
+        <span class="y">2025.04</span><h4>第四届"记录乡土中国"暨 2025 寒假大学生民俗文化社会调查 <b>二等奖</b><em>《铜仁印江土家族村落信仰信俗田野调查——以天堂镇中尧村为例》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_xt24">
+        <span class="y">2024.01</span><h4>第三届"记录乡土中国"大学生民俗文化社会调查 <b>优秀奖</b><em>《张田饼印田野调查报告》· 河南省口头与非物质文化遗产中心</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_mhaa">
+        <span class="y">2024.12</span><h4>澳门文物大使协会 MH+"追梦：澳门历史之城"作品征集 · <b>入编证明</b><em>《澳门基碑建筑图像研究》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw2">
+        <span class="y">2022.03</span><h4>第十七届"挑战杯"全国大学生课外学术科技作品竞赛 · <b>国赛二等奖</b><em>《空净计划——基于浓度智能控制的消毒杀菌系统》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_tzd_gd">
+        <span class="y">2021.07</span><h4>第十六届"挑战杯"广东大学生课外学术科技作品竞赛 · <b>省一等奖</b><em>《空净计划——基于浓度智能控制的消毒杀菌系统》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_tyz">
+        <span class="y">2020.07</span><h4>第十二届"挑战杯"广东大学生创业大赛 · <b>省级银奖</b><em>《太阳能蒸馏装置——"向大海要淡水"》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_xh">
+        <span class="y">2020.07</span><h4>第六届中国国际"互联网+"大学生创新创业大赛 校赛总决赛 · <b>优秀奖</b><em>《星火计划——茂名市革命遗址保护及利用》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_msj">
+        <span class="y">2019.09</span><h4>第五届中国"互联网+"大学生创新创业大赛 广东省分赛 · <b>创意组优胜奖</b><em>《陌桑居——农村人居环境空间设计》</em></h4><span class="more">详情 →</span></div></div>
+    </div>
+  </div>
+
+  <div class="grp reveal fold">
+    <div class="grp-h tg"><span class="zh">文学 · 翻译</span><span class="en">Literature & Translation</span><span class="chev">▾</span></div>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_ny">
+        <span class="y">2025.12</span><h4>第一届"乡村梦·南越王杯"全国诗词楹联大赛 词类 <b>优秀奖</b><em>《鹧鸪天·古竹新咏》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_hs">
+        <span class="y">2025.11</span><h4>第三十七届<b>韩素音国际翻译大赛</b> 日译汉 · 优秀奖</h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_ww">
+        <span class="y">2025.09</span><h4>第二届"王维杯"山水田园诗国际大赛 海外组 <b>优秀奖</b><em>《山居春晓》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_gy">
+        <span class="y">2025.04</span><h4>"一江碧水 南昌看'海'" 2025 南昌谷雨诗会 <b>大学生特别奖</b><em>《赣水新咏三章》</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_ocean">
+        <span class="y">2025.02</span><h4>第五届"海洋杯"国际翻译大赛 日译中组 · <b>优秀奖</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_wj">
+        <span class="y">2024.12</span><h4>第二届全国文物外交翻译大赛 英译汉组 · <b>三等奖</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_ln">
+        <span class="y">2024.12</span><h4>2024 第五届辽宁省翻译大赛 日译汉组 · <b>优秀奖</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_ln23">
+        <span class="y">2023.12</span><h4>2023 第四届辽宁省翻译大赛 日译汉组 · <b>优秀奖</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw1">
+        <span class="y">2020.12</span><h4>第三届"人民中国"杯日语国际翻译大赛 笔译本科组日译汉 · <b>三等奖</b></h4><span class="more">详情 →</span></div></div>
+    </div>
+  </div>
+
+  <div class="grp reveal fold">
+    <div class="grp-h tg"><span class="zh">艺术 · 展览 · 设计</span><span class="en">Art, Exhibitions & Design</span><span class="chev">▾</span></div>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_junyun">
+        <span class="y">2026.09</span><h4>首届"钧韵杯"钧瓷器型设计大赛 <b>三等奖</b><em>作品《朝颜·窑色》· 郑州轻工业大学</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_jungu2">
+        <span class="y">2026.08</span><h4>作品《骏骨凝香》入展 <b>"泥火草原·瓷韵匠心"首届内蒙古陶瓷艺术作品展</b><em>内蒙古民间文艺家协会 · 内蒙古陶瓷行业协会</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_liyong">
+        <span class="y">2026.06</span><h4>作品《沃土生花》获"中超利永杯·陶然新绿"青年陶艺家技能大赛 <b>新锐奖</b><em>江苏省陶瓷行业协会 · 宜兴市陶瓷行业协会</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_wuyi">
+        <span class="y">2026.04</span><h4>作品《朝颜》入展首届武义 <b>"婺州窑杯"咖啡器大奖赛</b><em>浙江省陶瓷行业协会</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_bj">
+        <span class="y">2026.05</span><h4>作品入展 <b>"我们的表达"五指山毛道乡黎族植物染 & 藤编艺术·北京专场展</b><em>民族文化宫展览馆 · 北京</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_frog">
+        <span class="y">2026.03</span><h4>作品《蛙鸣如诗》入选 <b>"地球的箴言——国际环保艺术展"</b><em>《中国美术报》社 · 南通大学 等</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw7">
+        <span class="y">2026.02</span><h4>作品《骏骨凝香》入选 <b>"骏马呈祥"第九届江西省生肖雕塑大展</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_jiangxi">
+        <span class="y">2026.01</span><h4>江西文旅高校创意大赛"全球学子嘉游赣" <b>创意视频三等奖</b><em>与同文平合作</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_seed">
+        <span class="y">2025.09</span><h4>作品《种子的诗》入展 <b>"大地上的诗篇"种子主题科普艺术展</b><em>中国农业博物馆</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_wm">
+        <span class="y">2025.07</span><h4>《海韵黎纹紫金陶瓦猫》被<b>海南紫金陶艺术馆收藏</b>（同年入围首届陶艺大赛）</h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_wt">
+        <span class="y">2025.06</span><h4>共创作品《沃土纪事》入展 <b>"我们的表达"五指山毛道乡黎族植物染 & 藤编艺术展</b><em>海南省文化馆 · 毛道乡人民政府</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_xa">
+        <span class="y">2025.03</span><h4>油画《长安街》《长安一隅》获"西望长安"全国美术作品展 <b>优秀作品奖</b><em>西安市美术家协会 · 第二十九回展</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_cr">
+        <span class="y">2025.09</span><h4>作品《春日来信》获 2025"绘就绿色未来"主题艺术作品比赛 <b>优秀奖</b><em>自然伙伴计划 × 中国美术学院团委</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw4">
+        <span class="y">2023.12</span><h4>作品《历史的交互》入选澳门文化局<b>"当代视野——澳门大学生当代艺术展"</b></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_specimen">
+        <span class="y">2023.11</span><h4>第五届中国动物标本大赛 <b>入围奖</b><em>《翡翠星辰》· 昆虫及其他无脊椎动物标本组</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_tbc">
+        <span class="y">2023.10</span><h4>2023 景德镇"陶博城杯"院校优秀陶瓷作品联展 <b>新锐奖</b><em>《沧海桑田》《敦煌日记》两件作品同时获奖</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_maoyue">
+        <span class="y">2023.05</span><h4>2023"卯月的癸卯"首届艺术研究展 <b>优秀奖</b><em>混沌美术馆</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw3">
+        <span class="y">2023.01</span><h4>作品《进化论》入编知网收录的<b>《中国视觉艺术年鉴 2022—2023》</b>（年鉴银奖）</h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_wenmai">
+        <span class="y">2023</span><h4>2023 首届两岸数字艺术设计年度奖 <b>铜奖</b><em>研究生版务组"龙的传人"· 作品《文脉》· 澳门科技大学</em></h4><span class="more">详情 →</span></div></div>
+      <div class="tl-item reveal"><div class="tl-row" data-d="aw_huaxia">
+        <span class="y">2023</span><h4>第二届华夏奖海峡两岸非遗文创设计大赛 <b>优秀奖</b><em>《螺钿——四象图之青龙》· 团队合作</em></h4><span class="more">详情 →</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINING ================= -->
+<section id="train">
+  <div class="reveal">
+    <div class="sec-tag">Programs & Workshops</div>
+    <h2 class="sec-title">课外研修</h2>
+    <div class="sec-rule"></div>
+    <p class="hint">按方向分类 · 点击条目查看研修内容（部分附结业证书）</p>
+  </div>
+
+  <div class="grp reveal">
+    <div class="grp-h"><span class="zh">田野 · 人类学 · 研究方法</span><span class="en">Fieldwork · Anthropology · Methods</span></div>
+    <div class="train-grid">
+      <div class="train-item reveal" data-d="tr_histanthro"><span class="y">2026.04</span><h4>Stepik · Historical Anthropology 历史人类学课程（83%）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_quali"><span class="y">2026.07</span><h4>QualiTaTi 暑期学校 · AI for Qualitative Research（成绩 A · 90.33/100）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_anthro26"><span class="y">2026.06</span><h4>第六届全国大学生人类学训练营（浙江大学人类学研究所）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr5"><span class="y">2025.07</span><h4>清华大学"大数据与因果推断研讨班"（交叉学科研究能力提升计划）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_anthro25"><span class="y">2025.06</span><h4>第五届全国大学生人类学训练营（浙江大学人类学研究所）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_apyc"><span class="y">2025.03</span><h4>APYC 亚太青年互鉴局 ·"从田野调研到智库建设"青年实践能力建设工作坊</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr8"><span class="y">2024.12</span><h4>北京大学"美好的对话"联合国教科文组织乡创教席口述计划</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr9"><span class="y">2024.08</span><h4>上海师范大学"到田野去"数字化田野研究训练营</h4><span class="more">详情 →</span></div>
+    </div>
+  </div>
+
+  <div class="grp reveal">
+    <div class="grp-h"><span class="zh">语言 · 古典学 · 文学</span><span class="en">Languages · Classics · Literature</span></div>
+    <div class="train-grid">
+      <div class="train-item reveal" data-d="tr_romanum"><span class="y">2026</span><h4>Classics Convoy · "Forum Romanum" 罗马历史文化课程</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_cunei"><span class="y">2026.08</span><h4>浙江师范大学文明古国研究院 · "楔形文字入门"线上暑期学校（苏美尔语 + 阿卡德语）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_latin"><span class="y">2026.08</span><h4>Classics Convoy · "Forum Linguae" 拉丁语语言与文学课程</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_lplus"><span class="y">2026.08</span><h4>第三届 Truly Global /L+/ 语言习得国际暑期学校</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr10"><span class="y">2024.07</span><h4>厦门大学电影学院"戏曲与非遗工作坊"暑期学校</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr14"><span class="y">2023.07</span><h4>山东大学 · 中华古典学术传承创新学术讲坛</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_psc"><span class="y">2022.05</span><h4>普通话水平测试等级证书 · 二级乙等（83.4 分）</h4><span class="more">详情 →</span></div>
+    </div>
+  </div>
+
+  <div class="grp reveal">
+    <div class="grp-h"><span class="zh">国际课程 · 认证</span><span class="en">International Programs & Certificates</span></div>
+    <div class="train-grid">
+      <div class="train-item reveal" data-d="tr_sustain"><span class="y">2026.08</span><h4>SustainMV 2026 · 德国梅前州大学联盟可持续发展暑期学校</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_sas"><span class="y">2026.08</span><h4>SAS Analytics Summer School（数据分析全流程）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_liberec"><span class="y">2026.08</span><h4>捷克利贝雷茨技术大学纺织工程学院暑期学校（获 6 ECTS 学分）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_law"><span class="y">2026.05</span><h4>School of Law Summer School 2026 · "Emerging Issues in Law"</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_advremote"><span class="y">2026.03</span><h4>杜伦大学等《高级考古遥感：遗址勘探、景观考古与遗产保护》</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_tohoku"><span class="y">2026.03</span><h4>日本东北大学 · "社会中的 AI"高度教养课程（ga149）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr4"><span class="y">2026.03</span><h4>杜伦大学、牛津大学等联合课程《濒危考古：利用遥感技术保护文化遗产》</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr3"><span class="y">2026.03</span><h4>牛津大学赛德商学院 × UNESCO · 政府 AI 与数字化转型 CPD 认证</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_prearch"><span class="y">2026.04</span><h4>意大利博洛尼亚大学 · Preventive Archaeology 预防性考古课程</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr1"><span class="y">2026.04</span><h4>意大利博洛尼亚大学 · 中东欧移民与边境研究（GlocalEAST）课程</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr2"><span class="y">2026.04</span><h4>WIPO 世界学院 · PCT 专利合作条约课程</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr12"><span class="y">2024.07</span><h4>北京大学第七届"京港澳台人口老龄化专题夏令营"</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_umac"><span class="y">2023.08</span><h4>澳门大学社会科学学院 · 2023 内地研究生及大学生暑期研习营</h4><span class="more">详情 →</span></div>
+    </div>
+  </div>
+
+  <div class="grp reveal">
+    <div class="grp-h"><span class="zh">文化遗产 · 艺术 · 修复</span><span class="en">Heritage · Art · Restoration</span></div>
+    <div class="train-grid">
+      <div class="train-item reveal" data-d="tr_shouzhou"><span class="y">2026.07</span><h4>国家艺术基金 2026《寿州窑创新技艺人才培训》人才培训班</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_taocamp"><span class="y">2024.07</span><h4>2024 暑期国际高校陶瓷交流创作营（龙泉）· 结营展</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_ngs"><span class="y">2026.03</span><h4>新加坡国家美术馆 · "东南亚艺术与环境"系列课程（两门）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_caa"><span class="y">2025.04</span><h4>中国美术学院龙泉研究院 · 数字建模与设计培训</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_fix"><span class="y">2024.09</span><h4>全国文博网络学院 · 陶瓷文物修复知识线上培训班</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_longquan"><span class="y">2024.11</span><h4>景德镇陶瓷大学龙泉研究院 · 大地艺术工作营（一期）+ 琉璃工作营（一期）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr11"><span class="y">2024.07</span><h4>北京大学 · 城乡建成环境文化遗产理论与方法：流域文明研究生暑期学校</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_sxmuseum"><span class="y">2024.04</span><h4>山西省博物馆协会 · 2024 年度博物馆藏品管理培训班（20 学时）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr13"><span class="y">2024.05</span><h4>陆海之约"一带一路"艺术互鉴计划（2024）广东江门工作营</h4><span class="more">详情 →</span></div>
+    </div>
+  </div>
+
+  <div class="grp reveal fold">
+    <div class="grp-h tg"><span class="zh">生活技艺 · 公益救护 · 户外</span><span class="en">Life Skills · First Aid · Outdoor</span><span class="chev">▾</span></div>
+    <div class="train-grid">
+      <div class="train-item reveal" data-d="tr_baker"><span class="y">2026.03</span><h4>BBC Good Food × FutureLearn 烘焙系列课程（ExpertTrack + 4 门课程，均 100% 完成）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_baker3"><span class="y">2025.09</span><h4>职业技能等级证书 · 中式糕点师（高级工 / 三级）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_pingcha"><span class="y">2025.06</span><h4>职业技能等级证书 · 评茶师（高级工 / 三级）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_ceramicmaker"><span class="y">2024.08</span><h4>职业技能等级证书 · 陶瓷工艺品制作师（成型师 · 五级）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_redcross"><span class="y">2024.11</span><h4>红十字救护员证 + CPR & AED 培训（龙泉市红十字会）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_mount"><span class="y">2024.10</span><h4>中国登山协会 · 一级山地户外运动水平（等级 + 技能培训证书）</h4><span class="more">详情 →</span></div>
+      <div class="train-item reveal" data-d="tr_teacher"><span class="y">2022.07</span><h4>教师资格证 · 高级中学（日语）</h4><span class="more">详情 →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skill">
+  <div class="reveal">
+    <div class="sec-tag">Skills</div>
+    <h2 class="sec-title">技能总结</h2>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-card reveal"><h3><span class="no">I</span>研究与田野</h3>
+      <ul><li>田野调查、文献检索与整理</li><li>图像学分析</li><li>文化遗产数字化保护（遥感技术 / 三维建模）</li></ul></div>
+    <div class="skill-card reveal"><h3><span class="no">II</span>量化与质性分析</h3>
+      <ul><li><b>量化：</b>大数据分析、因果推断基础、SAS Visual Analytics</li><li><b>质性：</b>NVivo 文本编码、口述史整理、AI 辅助质性研究</li></ul></div>
+    <div class="skill-card reveal" data-d="sk_lang"><h3><span class="no">III</span>语言能力（研究工具）<span class="more" style="margin-left:auto">详情 →</span></h3>
+      <ul><li><b>日语：</b>JLPT N1（2019）· 大学日语六级 CJT-6（2026）· 大学日语四级（2024）</li><li><b>英语：</b>CET-4（511 分）</li><li>普通话（二级乙等）· 粤语 · 客家话（母语）</li></ul></div>
+    <div class="skill-card reveal"><h3><span class="no">IV</span>修复与数字建模（技术支撑）</h3>
+      <ul><li>文物修复：陶瓷考古修复、金缮修复</li><li>数字建模：C4D、ZBrush、三维扫描仪操作</li></ul></div>
+  </div>
+  <div class="cert-strip reveal">
+    <div class="lab">其他证书</div>
+    <div class="chips">
+      <span>陶瓷工艺品制作师（成型师 · 五级）技能证书</span><span>评茶师（高级工 / 三级）技能证书</span><span>高中日语教师资格证</span>
+      <span>红十字救护员证（2024）</span><span>CPR + AED 培训证书</span><span>一级山地户外运动（中国登山协会）</span>
+      <span>中式糕点师（高级工 / 三级）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SELF ASSESSMENT ================= -->
+<section id="self">
+  <div class="reveal">
+    <div class="sec-tag">Personal Statement</div>
+    <h2 class="sec-title">自我评价</h2>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="self-box reveal">
+    <p><b style="color:var(--gold-bright);font-weight:400">我的主线是学术研究，兴趣主要集中在人类学、物质文化与图像学三处。</b>历史学让我习惯从一手材料与现场提问，美术史让我学会读图、断代与辨伪，人类学的训练则让我把器物、图像与仪式放回具体的人群与日常里去理解——不只是看它是什么，而是看谁在做、为什么做、做给谁看。近年研究沿着三条线索展开：澳门墓葬建筑图像与中西视觉交融、粤西与黔东的非遗田野与口述史、景德镇手工艺群体的生产与身份，已形成 2 篇期刊论文、1 篇硕士学位论文与 5 次学术会议宣讲。</p>
+    <p>我把研究做"重"：真正进入现场——量遗址、做口述、拍素材、建档案，再回到案头做图像学与文本分析。茂名的革命遗址普查、张田饼印、贵州村寨志、景德镇手工艺群体，田野给了我问题，也给了我检验问题的尺度。</p>
+    <p>工具箱是一格格填满的。日语 N1 让我能直接处理日文文献与近代史料，英语支撑国际会议报告，拉丁语、苏美尔语与阿卡德语的训练则把更古老的材料纳入视野；AI 辅助质性研究、遥感考古与三维建模，是我为田野方法预留的更新接口。四十余项研修与认证，于我并非收藏，而是让每一个问题都能找到趁手的工具。</p>
+    <p>耐得住琐碎，也守得住工期。我能独立跑完从选题、田野、写作到成稿的全流程，也能在团队里承担框架设计、访谈与影像记录的具体分工；在村子里能挨家挨户地聊，在工坊里能连续几周守着一座窑。面对遗产与手工艺，我倾向于先记录、再理解、最后才创作的次序。</p>
+    <p><b style="color:var(--gold-bright);font-weight:400">田野里攒下的东西，会自己找到出口，反哺到我偶尔进行的艺术创作里。</b>蹲在村子里看一场仪式、在工坊里看手艺人的手，那些形体、纹样、手势与节奏会沉下来，等回到工作室时才浮出水面——龙泉的泥与釉、昌马石窟的线条、饼印上的图样，都是田野先给了眼睛，手才跟上去。所以我的作品不多，也不追产量：每一件几乎都带着明确的来处，是某次调查、某段口述或某个图像问题的延伸。陶瓷雕塑与各类技艺对我而言是加分项而非主业，它们让研究有手感、让结论能被双手验证，但秤上的重心始终在研究这一侧。</p>
+    <p class="dim">接下来的方向，是在人类学、物质文化与图像学的交汇处继续深入：以田野的方法提出问题，以物质与图像的分析回答问题，让偶尔的创作继续充当田野的回响。</p>
+    <div class="self-tags">
+      <span>人类学</span><span>物质文化</span><span>图像学</span><span>田野调查</span><span>口述史</span>
+      <span>文化遗产</span><span>质性研究</span><span>日英双语</span><span>数字建模</span><span>陶瓷雕塑</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="name">嵇鸿轩</div>
+  <div class="en">JI HONGXUAN · Curriculum Vitae</div>
+  <div class="contact"><span>+86 133 0234 0686</span><span>kekogen@foxmail.com</span><span>浙江龙泉 / 江西景德镇</span></div>
+  <div class="fin">以田野进入现场 · 以研究回应材料 · 以陶瓷回应时间</div>
+</footer>
+
+<!-- ================= DETAIL OVERLAY ================= -->
+<div class="overlay" id="overlay">
+  <div class="sheet" id="sheet">
+    <button class="sheet-close" id="sheetClose" aria-label="关闭">✕</button>
+    <div class="k" id="dTag"></div>
+    <h2 id="dTitle"></h2>
+    <div class="meta" id="dMeta"></div>
+    <div class="sheet-rule"></div>
+    <div class="sheet-body">
+      <div class="sheet-txt" id="dBody"></div>
+      <figure class="sheet-fig" id="dFig" style="display:none"></figure>
+    </div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox"><img id="lbImg" alt=""></div>
+
+<script src="i18n.js"></script>
+<script>
+/* ============ 详情数据（内容依据本人简历与证书原件整理） ============ */
+const DATA = {
+/* ---- 教育 ---- */
+edu1:{tag:'Education · 2024—2026',title:'景德镇陶瓷大学 · 雕塑 第二学士学位',
+ meta:[['院系','美术学院'],['学制','两年（统招）'],['总学分','61'],['平均成绩','85.2'],['GPA','3.52 / 4']],
+ body:`<p><b style="color:var(--gold-bright);font-weight:400">什么是"第二学士学位"？</b>——指在取得第一个学士学位之后，通过全国普通高校统一招生再攻读的另一个本科学位：学制两年、全日制培养，毕业时授予与第一个学位<b style="color:var(--gold-bright);font-weight:400">具有同等法律效力的学士学位证书</b>，学历层次仍为本科。在国际通行口径（如 EQF / 英美体系）中，其层次对应 <i style="font-family:var(--latin)">Bachelor's degree（undergraduate）</i>，即"本科"。换言之，这是一段回到本科课堂、却带着硕士研究训练的"再本科"经历——从美术史研究者回到创作本体。</p>
+ <div class="sub">关键课程与成绩</div><ul>
+ <li>材料与观念 —— 93</li><li>传统雕塑 —— 90</li><li>陶瓷雕塑创作 —— 88</li><li>写意雕塑 —— 88</li>
+ <li>泥塑人体 —— 85</li><li>泥塑着衣 —— 84</li><li>数字雕塑 —— 84</li><li>泥塑胸像 —— 83</li>
+ <li>陶瓷成型技法 —— 81</li><li>毕业论文 / 毕业创作及答辩 —— 良好</li></ul>
+ <div class="sub">毕业设计 · 陶瓷雕塑《中国舞狮图鉴》</div><ul><li>2026 届本科雕塑专业毕业设计：以 8 件陶瓷狮头 / 面具构成系列，为广府醒狮之外的小众舞狮流派（北方、客家、潮汕等）建立"可观看、可触摸、可留存的立体民族志"；以艺术人类学、图像民俗学与物质文化叙事为方法，完成从田野资料、画稿泥稿到成型、干燥、烧成与描金的全流程。</li></ul>
+ <a class="dl" href="assets/thesis_lion.pdf" target="_blank">查看毕业设计答辩 PPT（PDF）↓</a>
+ <p class="dim">驻地江西景德镇，与浙江龙泉工作室的创作实践互为表里。</p>`,
+ tags:['第二学士学位','雕塑','陶瓷成型','材料与观念','写意雕塑']},
+edu2:{tag:'Education · 2022—2024',title:'澳门科技大学 · 美术学（美术史研究）硕士',
+ meta:[['排名','THE 251 / QS 464'],['院系','人文艺术学院'],['学位','美术硕士（美术史研究）']],
+ body:`<p>系统接受美术史研究训练，从史学方法进入视觉艺术研究，聚焦墓葬建筑图像、跨文化美术史等方向；2024 年 6 月通过硕士论文答辩，经校教学委员会授予美术硕士学位。</p>
+ <div class="sub">关键课程（官方成绩单）</div><ul>
+ <li>美术史研究方法</li><li>美术史</li><li>西方美术史专题</li>
+ <li>艺术史理论专题</li><li>文化专题</li><li>实习 / 学术活动</li></ul>
+ <div class="sub">毕业论文</div><ul><li>《澳门墓葬建筑图像研究》（英文题名 A Study on the Architectural Images of Tombstones in Macao）：运用建筑民族志、文献研究法、图像志与图像学及跨学科研究，对澳门现存 17 座坟场的墓碑建筑从结构、形制到图像的辨识、意义、应用作全面考察；2024 年 6 月通过答辩，论文收录于澳门科技大学图书馆本校学位论文库（含中英文摘要）。</li></ul>`,
+ tags:['美术史','图像学','澳门研究','墓葬建筑']},
+edu3:{tag:'Education · 2018—2022',title:'广东石油化工学院 · 历史学学士',
+ meta:[['院系','文法学院'],['专业','历史学']],
+ body:`<p>本科接受系统的史学训练，掌握文献、田野与口述史的基本方法，奠定此后所有研究与实践的底色。</p>
+ <div class="sub">关键课程</div><ul><li>中国通史 —— 94</li><li>世界通史 —— 95</li><li>史学概论 —— 88</li>
+ <li>文学理论 —— 94</li><li>大学日语（二）—— 92</li></ul>
+ <div class="sub">荣誉与毕业论文</div><ul><li>一等奖学金、三好学生、优秀毕业生</li><li>毕业论文《浅谈日本社会主义失败的原因》</li></ul>`,
+ tags:['历史学','口述史','文献整理']},
+
+/* ---- 项目 ---- */
+proj1:{tag:'Research Project · 2024',title:'南风窗"调研中国"：景德镇陶瓷手工艺从业者研究',
+ meta:[['角色','团队成员'],['主题','《为生产完整的人：后农业模式下景德镇陶瓷手工艺从业者研究》'],['结果','入围十强 · 三等奖 · 优秀调研记录奖']],
+ body:`<p>以南风窗"调研中国"项目为依托，对后农业模式下的景德镇陶瓷手工艺从业者进行系统调研，关注手艺人群体在生产结构变迁中的处境与身份。</p>
+ <div class="sub">个人分工（全流程参与）</div><ul><li>调研框架设计</li><li>问卷与访谈</li><li>文献收集</li><li>实地调研</li><li>视频拍摄与剪辑</li><li>报告撰写</li></ul>
+ <div class="sub">项目成果</div><ul><li>入围南风窗"调研中国"十强，获三等奖</li><li>获优秀调研记录奖</li><li>团队先后获"百强团队""三十强团队"阶段荣誉（TOP 100 / TOP 30）</li></ul>`,
+ fig:[['assets/diaoyan2024.jpg','十强团队荣誉证书 · 南风窗"调研中国"2024'],['assets/top30.jpg','三十强团队荣誉证书'],['assets/top100.jpg','百强团队荣誉证书'],['assets/nanfengchu2024.jpg','南风窗杂志社实践证明']],
+ tags:['田野调查','景德镇','手工艺研究','口述访谈','影像记录']},
+proj2:{tag:'Research Project · 2022—2023',title:'广东省非遗张田饼印田野调查',
+ meta:[['角色','负责人'],['地点','广东省（非遗项目地）'],['成果','获奖报告 + 期刊论文（代表作）']],
+ body:`<p>以广东省非物质文化遗产"张田饼印"为对象，围绕非遗传承人与饼印图案展开系统田野调查与图像学研究。</p>
+ <div class="sub">工作内容</div><ul><li>对非遗传承人进行深度访谈，完整记录饼印制作技艺与流程</li><li>对当地非遗产品的图案进行图像学分析、分类与整理</li><li>撰写田野调查报告</li></ul>
+ <div class="sub">项目成果</div><ul><li>《张田饼印田野调查报告》获第三届"记录乡土中国"大学生民俗文化社会调查活动优秀奖</li><li>论文《广东张田饼印田野调查——兼论张田饼印图像民俗学解读》发表于《民艺》学术期刊（ISSN: 2096-5257）2024 年第 1 期，为个人代表作</li></ul>`,
+ tags:['非遗','图像学','传承人访谈','民俗学']},
+proj3:{tag:'Research Project · 2020—2021',title:'广东省茂名市革命遗址普查',
+ meta:[['角色','负责人'],['委托','配合茂名市政府党史地志办'],['成果','大创校级 + 省级立项 · 期刊论文']],
+ body:`<p>本科期间主持的革命遗址普查项目，配合茂名市政府党史地志办完成茂名市区内革命遗址的系统普查。</p>
+ <div class="sub">工作内容</div><ul><li>测量和记录遗址现状，建立遗址信息档案</li><li>与当地村民进行口述史记录和整理</li><li>撰写田野调查报告</li></ul>
+ <div class="sub">项目成果</div><ul><li>完成大学生创新创业项目校级立项，并获省级立项</li><li>独立发表学术论文《茂名市革命遗址"寻访"记》，《炎黄地理》2021 年第 6 期（ISSN: 2095-6185）</li></ul>`,
+ tags:['革命遗址','口述史','地方史','大创项目']},
+
+/* ---- 实践 ---- */
+prac1:{tag:'Art Practice · 2023.06 — 至今',title:'龙泉个人陶瓷工作室（浙江龙泉）',
+ meta:[['角色','创始人 / 常驻艺术家'],['驻地','浙江省龙泉市（青瓷产地）']],
+ body:`<p>2023 年 6 月起，在浙江省龙泉市青瓷产地创办个人工作室，常驻进行艺术创作。以龙泉青瓷的釉色与成型传统为语言，展开陶瓷雕塑与器物创作。</p>
+ <div class="sub">代表作品与近期成果</div><ul><li>《骏骨凝香》—— 入选"骏马呈祥"第九届江西省生肖雕塑大展</li>
+ <li>《海韵黎纹紫金陶瓦猫》—— 被海南紫金陶艺术馆收藏</li><li>《春日来信》—— 获"绘就绿色未来"主题艺术作品比赛优秀奖</li>
+ <li>《瓦猫》《秘色》《蓝色血液》《蛙鸣如诗》《种子的诗》等</li></ul>
+ <p class="dim">工作室同时是田野与创作的接点：景德镇调研、龙泉在地生活与陶瓷大学的系统训练在此汇合。</p>`,
+ tags:['陶瓷雕塑','龙泉青瓷','艺术创作','工作室']},
+prac2:{tag:'Fieldwork · 2024.12 — 2025.01',title:'贵州省《村寨志》编撰——印江县中尧村',
+ meta:[['角色','编撰成员'],['委托','贵州省人类学学会 · 贵阳市手上记忆博物馆'],['对象','铜仁市印江县中尧土家族村寨']],
+ body:`<p>参与贵州省铜仁市印江县中尧村土家族传统村寨的田野调查与村寨志编写，为村落文化建档。</p>
+ <div class="sub">工作内容</div><ul><li>入户与当地居民交流，从村民口述、石雕碑刻、基层支部、图文记载等不同渠道发掘信息</li><li>记录乡村历史、地方民俗、基层治理、经济发展等</li><li>结合传统方志、田野史学、民族志、口述史和现代记录手段，对村寨的自然资源、村落历史、文化资源、基层建制进行系统梳理</li></ul>
+ <div class="sub">延伸成果</div><ul><li>基于本次田野的信俗调查作品获第四届"记录乡土中国"二等奖（2025）</li><li>《仪式实践中的共生秩序与认同调适》会议口头报告（2025）</li></ul>`,
+ fig:[['assets/guizhou_field.jpg','田野调查实践证书 · 贵州省人类学学会'],['assets/zhongyao_cert.jpg','中尧村村委会证明材料']],
+ tags:['村寨志','土家族','口述史','民族志','西南村寨']},
+prac3:{tag:'Art Residency · 2024.08 — 2024.10',title:'昌马石窟复原性临摹项目（"昌马世瑞"二期）· 玉门市博物馆',
+ meta:[['角色','驻留艺术家 / 临摹团队成员'],['地点','甘肃省玉门市 · 昌马石窟'],['对象','第 2 窟、第 4 窟壁画'],['目标','三年—五年系统性整理约 140 ㎡ 壁画，无偿捐赠玉门市博物馆']],
+ body:`<p>参与甘肃省玉门市"昌马世瑞"昌马石窟复原性临摹二期项目。昌马石窟与莫高窟、榆林窟等同处疏勒河流域，同属敦煌石窟艺术范畴；1932 年大地震后大部分洞窟损毁，仅中段第 2、4 窟保存较完整（中心柱窟）。项目旨在通过复原性与线描性临摹，对窟内约 140 平方米壁画进行系统性整理，其后无偿捐赠玉门市博物馆，为石窟后续研究及修复提供学术支撑。</p>
+ <div class="sub">工作流程（以狮子壁画为例）</div><ul><li>石窟前期资料信息扫描采集</li><li>走线复原 → 复原线稿 → 线稿填色 → 泥板做旧，四步完成复原性临摹</li><li>石窟菩萨壁画复原、窟顶宝相花纹样复原</li><li>后期在博物馆内绘制复原石窟壁画，进行石窟佛像复原临摹</li></ul>
+ <div class="sub">文化遗产活化</div><ul><li>石窟狮子壁画立体化泥塑创作</li><li>以第 2 窟顶部宝相花纹样开发文创产品（雨伞、帆布包、渔夫帽等样机）</li></ul>`,
+ fig:[['assets/changma_scan.jpg','石窟壁画扫描采集'],['assets/changma_lion.jpg','狮子壁画复原四步：走线复原 · 复原线稿 · 线稿填色 · 泥板做旧'],['assets/changma_mural.jpg','菩萨壁画复原 与 窟顶纹样复原'],['assets/changma_museum.jpg','博物馆复原石窟绘制 与 佛像复原临摹'],['assets/changma_wenchuang.jpg','宝相花纹文创样机']],
+ tags:['昌马石窟','敦煌体系','壁画临摹','文化遗产活化','艺术驻留']},
+prac4:{tag:'Internship · 2022.05 — 2022.07',title:'茂名市政府党史地志办实习',
+ meta:[['角色','实习生'],['地点','广东省茂名市']],
+ body:`<p>在茂名市政府党史地志办实习，参与地方史整理与革命史田野工作。</p>
+ <div class="sub">工作内容</div><ul><li>随同茂名市政府参与市区内的革命遗址田野调查，测量、采集遗址信息</li><li>对革命后代进行口述访谈</li><li>整理广东省茂名市地方史资料</li><li>负责翻译近代侵华日军书信日文文献（发挥日语 N1 能力）</li></ul>`,
+ tags:['地方志','口述访谈','日文文献翻译']},
+
+/* ---- 获奖：学术 · 研究 · 翻译 ---- */
+aw_gq:{tag:'Award · 2026.05',title:'第七届"光祈杯"全国高校艺术学科学生论文比赛 本科生组三等奖',
+ meta:[['奖项','本科生组 三等奖'],['论文','《澳门墓碑建筑图像研究》'],['主办','四川省音乐文学学会等 · 光祈学术中心']],
+ body:`<p>硕士毕业论文研究方向的单篇成果《澳门墓碑建筑图像研究》，在第七届"光祈杯"全国高校艺术学科学生论文比赛中荣获本科生组三等奖。</p>`,
+ fig:[['assets/award_guangqi.jpg','获奖证书']],
+ tags:['论文竞赛','澳门研究','三等奖']},
+aw_xt26:{tag:'Award · 2026.05',title:'第五届"记录乡土中国"大学生民俗文化社会调查 二等奖',
+ meta:[['奖项','二等奖'],['作品','《非马之马：纸马仪式中的马文化重构——基于云南多民族的田野调查报告》'],['主办','河南师范大学社会学院 · 口头与非物质文化遗产研究中心'],['时间','2026.5.12']],
+ body:`<p>基于云南多民族地区纸马（甲马）仪式的田野调查，讨论民间信仰中"马"意象的文化重构，获第五届"记录乡土中国"暨 2026 寒假大学生民俗文化社会调查征稿活动二等奖。</p>`,
+ fig:[['assets/award_xiangtu2026.jpg','荣誉证书']],
+ tags:['民俗学','纸马','田野调查','二等奖']},
+aw_yn:{tag:'Award · 2026.05',title:'云南省民俗学会 2026"AI 时代的旅居与民俗"田野调查征稿 三等奖',
+ meta:[['奖项','三等奖'],['作品','《非马之马：纸马仪式中的马文化重构——基于云南多民族的田野调查报告》'],['主办','云南省民俗学会'],['时间','2026.5.15']],
+ body:`<p>同一纸马调查报告在云南省民俗学会 2026 年"AI 时代的旅居与民俗"田野调查征稿活动中获三等奖。</p>`,
+ tags:['民俗学','纸马','三等奖']},
+aw_hs:{tag:'Award · 2025.11',title:'第三十七届韩素音国际翻译大赛 日译汉 · 优秀奖',
+ meta:[['奖项','优秀奖（日译汉）'],['主办','中国翻译协会'],['时间','2025.11']],
+ body:`<p>在第三十七届韩素音国际翻译大赛中获日译汉组优秀奖。该赛事由中国翻译协会主办，是国内翻译领域最具权威性的赛事之一，奖项体现了日语 N1 水平之上的翻译实践能力。</p>`,
+ fig:[['assets/award_hansu.jpg','获奖证书 · 中国翻译协会']],
+ tags:['翻译','日语','竞赛']},
+aw_xt25:{tag:'Award · 2025.04',title:'第四届"记录乡土中国"大学生民俗文化社会调查 二等奖',
+ meta:[['奖项','二等奖'],['作品','《铜仁印江土家族村落信仰信俗田野调查——以天堂镇中尧村为例》'],['颁发','河南省口头与非物质文化遗产中心 · 2025.04.25']],
+ body:`<p>基于贵州印江中尧村《村寨志》编撰期间的信俗田野调查，形成调查作品《铜仁印江土家族村落信仰信俗田野调查——以天堂镇中尧村为例》，获第四届"记录乡土中国"暨 2025 寒假大学生民俗文化社会调查征稿活动二等奖。</p>`,
+ fig:[['assets/xiangtu4.jpg','获奖证书']],
+ tags:['民俗学','信俗','田野调查','二等奖']},
+aw2:{tag:'Award · 2022.03',title:'第十七届"挑战杯"全国大学生课外学术科技作品竞赛 · 国赛二等奖',
+ meta:[['奖项','国家二等奖'],['作品','《空净计划——基于浓度智能控制的消毒杀菌系统》'],['编号','2021-TZB17-MA20235H-3CCED9'],['时间','2022.03']],
+ body:`<p>作为团队核心成员，作品《空净计划——基于浓度智能控制的消毒杀菌系统》在第十七届"挑战杯"全国大学生课外学术科技作品竞赛中荣获国家级二等奖（指导教师：王大成、张琨、冯晓；团队包括郭耀晖、嵇鸿轩、刘宋浩、练英挺、林永和、蔡坤源、梁燕婷、黎海强）。此前该作品已获第十六届"挑战杯"广东省赛区一等奖。</p>`,
+ fig:[['assets/challenge_national.jpg','获奖证书 · 第十七届挑战杯全国二等奖'],['assets/challenge_gd1.jpg','获奖证书 · 第十六届挑战杯广东省一等奖']],
+ tags:['挑战杯','学术竞赛','国赛']},
+aw_tzd_gd:{tag:'Award · 2021.07',title:'第十六届"挑战杯"广东大学生课外学术科技作品竞赛 · 省一等奖',
+ meta:[['奖项','广东省一等奖'],['作品','《空净计划——基于浓度智能控制的消毒杀菌系统》'],['主办','团省委、省教育厅、省科技厅 等'],['时间','2021.7']],
+ body:`<p>作为《空净计划——基于浓度智能控制的消毒杀菌系统》团队成员，在第十六届"挑战杯"广东大学生课外学术科技作品竞赛中荣获省级一等奖（指导教师：王大成、张琨、冯晓）。该奖项为次年国赛二等奖的晋级来源。</p>`,
+ fig:[['assets/challenge_gd1.jpg','获奖证书 · 第十六届挑战杯广东省一等奖']],
+ tags:['挑战杯','学术竞赛','省赛']},
+aw1:{tag:'Award · 2020.12',title:'第三届"人民中国"杯日语国际翻译大赛 笔译本科组日译汉 · 三等奖',
+ meta:[['奖项','三等奖（笔译本科组 · 日译汉）'],['主办','人民中国杂志社 × 教育部外指日语分委员会'],['时间','2020.12.3']],
+ body:`<p>在第三届"人民中国"杯日语国际翻译大赛中，以参赛作品获笔译本科组日译汉三等奖。该赛事由人民中国杂志社与教育部高等学校外语教学指导委员会日语分委员会联合主办。</p>`,
+ fig:[['assets/renmin2020.jpg','获奖证书']],
+ tags:['翻译','日语','竞赛']},
+aw_ocean:{tag:'Award · 2025.02',title:'第五届"海洋杯"国际翻译大赛 日译中组 · 优秀奖',
+ meta:[['奖项','优秀奖（日译中组）'],['指导单位','全国翻译专业学位研究生教育指导委员会 · 中国翻译协会'],['主办','上海海事大学 · 集美大学 · 上海市科技翻译学会'],['时间','2025.2']],
+ body:`<p>在第五届"海洋杯"国际翻译大赛中获日译中组优秀奖。该赛事由全国翻译专业学位研究生教育指导委员会、中国翻译协会指导。</p>`,
+ fig:[['assets/ocean2025.jpg','荣誉证书']],
+ tags:['翻译','日语','国际大赛']},
+aw_wj:{tag:'Award · 2024.12',title:'第二届全国文物外交翻译大赛 英译汉组 · 三等奖',
+ meta:[['奖项','三等奖（英译汉组）'],['主办','四川省翻译协会'],['编号','WWJ-HYY-24024'],['时间','2024.12']],
+ body:`<p>在第二届全国文物外交翻译大赛英译汉组中获三等奖。赛事聚焦文物与文化对外传播语境下的翻译实践，与其文化遗产研究方向互为表里。</p>`,
+ fig:[['assets/waijiao2024.jpg','荣誉证书 · 四川省翻译协会']],
+ tags:['翻译','文物','英译汉']},
+aw_ln:{tag:'Award · 2024.12',title:'2024 第五届辽宁省翻译大赛 日译汉组 · 优秀奖',
+ meta:[['奖项','优秀奖（日译汉组）'],['主办','辽宁省翻译学会 等'],['编号','LN-RYH-Y24006'],['时间','2024.12']],
+ body:`<p>在 2024 年第五届辽宁省翻译大赛中获日译汉组优秀奖（日本語の部・優秀賞）。</p>`,
+ fig:[['assets/liaoning2024.jpg','荣誉证书']],
+ tags:['翻译','日语','优秀奖']},
+aw_ln23:{tag:'Award · 2023.12',title:'2023 第四届辽宁省翻译大赛 日译汉组 · 优秀奖',
+ meta:[['奖项','优秀奖（日译汉组）'],['主办','辽宁省翻译学会 等'],['编号','LN-RYH-2023040181'],['时间','2023.12']],
+ body:`<p>在 2023 年第四届辽宁省翻译大赛中获日译汉组优秀奖（2023年遼寧省第4回翻訳コンテスト日本語訳の部・優秀賞を授与）。</p>`,
+ fig:[['assets/liaoning2023.jpg','荣誉证书']],
+ tags:['翻译','日语','优秀奖']},
+aw_xt24:{tag:'Award · 2024.01',title:'第三届"记录乡土中国"大学生民俗文化社会调查 · 优秀奖',
+ meta:[['奖项','优秀奖'],['作品','《张田饼印田野调查报告》'],['主办','河南省口头与非物质文化遗产中心'],['时间','2024.1.15']],
+ body:`<p>在第三届"记录乡土中国"大学生民俗文化社会调查活动中，《张田饼印田野调查报告》获优秀奖。该报告亦为后来发表于《民艺》的代表作论文《广东张田饼印田野调查——兼论张田饼印图像民俗学解读》的前身。</p>`,
+ fig:[['assets/xiangtu2024.jpg','荣誉证书']],
+ tags:['民俗学','田野调查','饼印']},
+aw_mhaa:{tag:'Award · 2024.12',title:'澳门文物大使协会 MH+"追梦：澳门历史之城"作品征集 · 入编证明',
+ meta:[['作品','《澳门基碑建筑图像研究》'],['主办','澳门文物大使协会（MHAA）'],['时间','2024.12.31']],
+ body:`<p>作品《澳门基碑建筑图像研究》参加澳门文物大使协会 MH+"追梦：澳门历史之城作品征集比赛"，获官方参加证明。该研究延续其硕士论文的澳门墓葬建筑母题。</p>`,
+ tags:['澳门研究','墓葬建筑','征集']},
+aw_tyz:{tag:'Award · 2020.07',title:'第十二届"挑战杯"广东大学生创业大赛 · 省级银奖',
+ meta:[['奖项','银奖（大学生创业计划竞赛）'],['作品','《太阳能蒸馏装置——"向大海要淡水"'],['主办','共青团广东省委 · 广东省教育厅 等'],['时间','2020.7']],
+ body:`<p>作为团队核心成员，作品《太阳能蒸馏装置——"向大海要淡水"》获第十二届"挑战杯"广东大学生创业大赛大学生创业计划竞赛银奖（广东石油化工学院）。</p>`,
+ fig:[['assets/challenge_yin2020.jpg','获奖证书 · 省级银奖']],
+ tags:['挑战杯','创业','省级银奖']},
+aw_xh:{tag:'Award · 2020.07',title:'第六届中国国际"互联网+"大学生创新创业大赛 校赛总决赛 · 优秀奖',
+ meta:[['奖项','优秀奖'],['作品','《星火计划——茂名市革命遗址保护及利用》'],['主办','广东石油化工学院创新创业学院'],['指导','刘影虹、林霞'],['时间','2020.7']],
+ body:`<p>作品《星火计划——茂名市革命遗址保护及利用》获第六届中国国际"互联网+"大学生创新创业大赛"拓步体育杯"广东石油化工学院校赛总决赛优秀奖。项目与其主持的茂名市革命遗址普查一脉相承。</p>`,
+ fig:[['assets/xinghuo2020.jpg','荣誉证书']],
+ tags:['互联网+','创新创业','革命遗址']},
+aw_msj:{tag:'Award · 2019.09',title:'第五届中国"互联网+"大学生创新创业大赛 广东省分赛 · 创意组优胜奖',
+ meta:[['奖项','创意组 优胜奖'],['项目','《陌桑居——农村人居环境空间设计》'],['主办','广东省教育厅'],['指导','方芳、周金星'],['时间','2019.9']],
+ body:`<p>作为团队成员参与项目《陌桑居——农村人居环境空间设计》，在第五届中国"互联网+"大学生创新创业大赛广东省分赛高教主赛道决赛中获创意组优胜奖。</p>`,
+ fig:[['assets/mosangju.jpg','荣誉证书 · 广东省教育厅']],
+ tags:['互联网+','人居环境','省级']},
+
+/* ---- 获奖：文学 · 诗词 ---- */
+aw_ny:{tag:'Award · 2025.12',title:'第一届"乡村梦·南越王杯"全国诗词楹联大赛 词类优秀奖',
+ meta:[['奖项','词类 优秀奖'],['作品','《鹧鸪天·古竹新咏》'],['时间','2025.12.16']],
+ body:`<p>旧体词作品《鹧鸪天·古竹新咏》在第一届"乡村梦·南越王杯"全国诗词楹联大赛中荣获词类优秀奖。</p>`,
+ fig:[['assets/award_nanyue.jpg','荣誉证书']],
+ tags:['诗词','旧体词','优秀奖']},
+aw_ww:{tag:'Award · 2025.09',title:'第二届"王维杯"山水田园诗国际大赛 海外组优秀奖',
+ meta:[['奖项','海外组 优秀奖'],['作品','《山居春晓》'],['主办','中华诗词学会海外诗词工作委员会 · 广东中华诗词学会海外诗词工作委员会'],['时间','2025.9.27']],
+ body:`<p>山水田园诗作品《山居春晓》在第二届"王维杯"山水田园诗国际大赛中荣获海外组优秀奖。</p>`,
+ fig:[['assets/award_wangwei.jpg','荣誉证书']],
+ tags:['诗词','山水田园诗','国际大赛']},
+aw_gy:{tag:'Award · 2025.04',title:'2025 南昌谷雨诗会 · 大学生特别奖',
+ meta:[['奖项','大学生特别奖'],['作品','《赣水新咏三章》'],['主办','南昌市文学艺术界联合会'],['主题','"一江碧水 南昌看\'海\'"']],
+ body:`<p>组诗《赣水新咏三章》在"一江碧水 南昌看'海'"2025 南昌谷雨诗会中荣获大学生特别奖。</p>`,
+ fig:[['assets/award_guyu.jpg','获奖证书 · 南昌市文联']],
+ tags:['诗歌','现代诗','特别奖']},
+
+/* ---- 获奖：展览 · 收藏 ---- */
+aw_bj:{tag:'Exhibition · 2026.05',title:'入展"我们的表达"黎族植物染 & 藤编艺术·北京专场展',
+ meta:[['展览','五指山毛道乡黎族植物染 & 藤编艺术 北京专场展'],['场地','民族文化宫展览馆'],['时间','2026.5']],
+ body:`<p>作品入展"我们的表达"五指山毛道乡黎族植物染 & 藤编艺术北京专场展。该展由海南非遗在地项目延伸至北京民族文化宫，是民族工艺与当代艺术对话的专题展。</p>`,
+ fig:[['assets/award_mzd_bj.jpg','参展证书 · 民族文化宫展览馆']],
+ tags:['展览','民族工艺','北京']},
+aw_frog:{tag:'Exhibition · 2026.03',title:'《蛙鸣如诗》入选"地球的箴言——国际环保艺术展"',
+ meta:[['作品','《蛙鸣如诗》'],['主办','《中国美术报》社 · 中共南通市委宣传部 · 南通大学 等'],['时间','2026.3.28']],
+ body:`<p>作品《蛙鸣如诗》入选"地球的箴言——国际环保艺术展"。该展为《中国美术报》创刊十周年 / 2025 中国美术报艺术季项目，以生态与环保为主题面向国际征集。</p>`,
+ fig:[['assets/award_frog.jpg','入选证书']],
+ tags:['环保艺术','入选','国际展']},
+aw7:{tag:'Exhibition · 2026.02',title:'《骏骨凝香》入选"骏马呈祥"第九届江西省生肖雕塑大展',
+ meta:[['奖项','入选作品'],['作品','《骏骨凝香》（陶瓷雕塑）'],['主办','江西省工艺美术学会'],['证书','2026.2']],
+ body:`<p>以"骏马"为题的生肖雕塑创作《骏骨凝香》，入选由江西省工艺美术学会主办的第九届生肖雕塑大展，获入选作品证书。作品延续工作室"生肖马系列"的陶盘与雕塑语言，釉色与肌理并重。</p>
+ <div class="sub">相关</div><ul><li>同系列作品获广东四季艺术收藏有限公司 S&J 画廊驻留及作品收藏证明（2025）</li></ul>`,
+ fig:[['assets/award_jungu.jpg','入选作品证书 · 江西省工艺美术学会']],
+ tags:['陶瓷雕塑','生肖','展览入选']},
+aw_seed:{tag:'Exhibition · 2025.09',title:'《种子的诗》入展"大地上的诗篇"种子主题科普艺术展',
+ meta:[['作品','《种子的诗》'],['主办','中国农业博物馆'],['时间','2025.9']],
+ body:`<p>作品《种子的诗》入展中国农业博物馆主办的"大地上的诗篇——种子主题科普艺术展"（Poetry of the Earth）。</p>`,
+ fig:[['assets/award_seeds.jpg','参展证书 · 中国农业博物馆']],
+ tags:['科普艺术','展览','农业博物馆']},
+aw_wm:{tag:'Collection · 2025.07',title:'《海韵黎纹紫金陶瓦猫》被海南紫金陶艺术馆收藏',
+ meta:[['作品','《海韵黎纹紫金陶瓦猫》'],['收藏','海南紫金陶艺术馆'],['证书','2025.7.1']],
+ body:`<p>将海南黎族纹样融入紫金陶语言的瓦猫作品，被海南紫金陶艺术馆正式收藏。同年 3 月，该作品入围由海南省工艺美术协会主办的海南紫金陶首届陶艺大赛。</p>`,
+ fig:[['assets/award_wamao_collect.jpg','收藏证 · 海南紫金陶艺术馆'],['assets/award_wamao_shortlist.jpg','入围证书 · 海南省工艺美术协会']],
+ tags:['瓦猫','黎族纹样','收藏','紫金陶']},
+aw_wt:{tag:'Exhibition · 2025.06',title:'共创作品《沃土纪事》入展"我们的表达"五指山黎族植物染 & 藤编艺术展',
+ meta:[['作品','《沃土纪事》（共创）'],['主办','海南省文化馆（海南省非物质文化遗产保护中心）· 五指山市毛道乡人民政府'],['时间','2025.6']],
+ body:`<p>共创作品《沃土纪事》入展"我们的表达"五指山毛道乡黎族植物染 & 藤编艺术展；该展后续进京，于 2026 年 5 月在民族文化宫展览馆举办北京专场展。</p>`,
+ fig:[['assets/award_wotu.jpg','参展证书']],
+ tags:['共创','植物染','藤编','非遗']},
+aw_xa:{tag:'Award · 2025.03',title:'油画《长安街》《长安一隅》获"西望长安"全国美术作品展 优秀作品奖',
+ meta:[['奖项','优秀作品奖'],['作品','油画《长安街》《长安一隅》（40×60cm，2024）'],['主办','西安市美术家协会'],['展览','第二十九回展 · 2025.2.17']],
+ body:`<p>两件油画作品经组委会审核通过，入选由西安市美术家协会主办、西安市美术家协会新闻中心承办的"西望长安 全国美术作品展"（第二十九回展），并获优秀作品奖。</p>`,
+ fig:[['assets/award_xian.jpg','参展荣誉证书 · 展册页']],
+ tags:['油画','全国美展','优秀作品奖']},
+aw_cr:{tag:'Award · 2025.09',title:'《春日来信》获"绘就绿色未来"主题艺术作品比赛 优秀奖',
+ meta:[['奖项','优秀奖'],['作品','《春日来信》'],['主办','自然伙伴计划 × 中国美术学院团委'],['编号','2025A0060']],
+ body:`<p>作品《春日来信》在 2025 年"绘就绿色未来"主题艺术作品比赛中荣获优秀奖。</p>`,
+ fig:[['assets/award_chunri.jpg','获奖证书 · 自然伙伴计划 / 中国美术学院团委']],
+ tags:['生态艺术','优秀奖','中国美院']},
+aw4:{tag:'Award · 2023.12',title:'《历史的交互》入选"当代视野——澳门大学生当代艺术展"',
+ meta:[['奖项','入选'],['作品','《历史的交互》'],['主办','澳门文化局 · 澳门视觉艺术教师协会']],
+ body:`<p>综合材料作品《历史的交互》入选由澳门文化局举办的《当代视野——澳门大学生当代艺术展》。作品延续其在澳门时期对历史层积与身份交互的视觉思考。</p>`,
+ fig:[['assets/dangdai2023.jpg','入选证书']],
+ tags:['当代艺术','展览入选','澳门']},
+aw3:{tag:'Award · 2023.01',title:'《进化论》入编《中国视觉艺术年鉴 2022—2023》',
+ meta:[['奖项','入编 · 年鉴银奖'],['作品','《进化论》（综合材料类）'],['收录','中国知网全文收录（2023.12）']],
+ body:`<p>综合材料作品《进化论》经严格编审入编《中国视觉艺术年鉴 2022—2023》（入编作品编号 Y22233663），同时获本届年鉴银奖；年鉴于 2023 年 12 月被中国知网全文收录。</p>`,
+ fig:[['assets/nianjian.jpg','获奖入编证书']],
+ tags:['综合材料','年鉴','知网收录']},
+aw_specimen:{tag:'Award · 2023.11',title:'第五届中国动物标本大赛 · 入围奖《翡翠星辰》',
+ meta:[['奖项','入围奖'],['组别','昆虫及其他无脊椎动物标本组'],['作品','《翡翠星辰》'],['主办','中国科学院动物研究所 · 中国动物学会 等'],['时间','2023.11.14']],
+ body:`<p>标本作品《翡翠星辰》在第五届中国动物标本大赛（昆虫及其他无脊椎动物标本组）中获入围奖（证书号 2023-05-09-D085）。作品以陶瓷与综合材料语言进入自然标本的语境，延续其对生物形态与工艺边界的兴趣。</p>`,
+ fig:[['assets/specimen_cert.jpg','获奖证书 · 第五届中国动物标本大赛']],
+ tags:['标本','自然艺术','入围奖']},
+aw_tbc:{tag:'Award · 2023.10',title:'2023 景德镇"陶博城杯"院校优秀陶瓷作品联展 · 新锐奖（两件）',
+ meta:[['奖项','新锐奖 × 2'],['作品','《沧海桑田》（陈设瓷，高 5cm）《敦煌日记》'],['主办','景德镇国际陶博城'],['时间','2023.10.31']],
+ body:`<p>两件陶瓷作品《沧海桑田》《敦煌日记》在 2023 景德镇"陶博城杯"院校优秀陶瓷作品联展中同时荣获新锐奖。《沧海桑田》为陈设瓷（高 5cm、最大半径 8cm），以小尺度的釉色层积隐喻时间与地貌的变迁。</p>`,
+ fig:[['assets/taobocheng_certs.jpg','荣誉证书 × 2'],['assets/taobocheng_photo.jpg','荣誉证书（清晰版）'],['assets/taobocheng_label.jpg','《沧海桑田》参展作品标签']],
+ tags:['陶瓷','联展','新锐奖']},
+aw_jungu2:{tag:'Exhibition · 2026.08',title:'《骏骨凝香》入展"泥火草原·瓷韵匠心"首届内蒙古陶瓷艺术作品展',
+ meta:[['作品','《骏骨凝香》'],['主办','内蒙古民间文艺家协会 · 承办：内蒙古陶瓷行业协会'],['时间','2026.8']],
+ body:`<p>生肖陶瓷作品《骏骨凝香》入选由内蒙古民间文艺家协会主办、内蒙古陶瓷行业协会承办的"泥火草原·瓷韵匠心"首届内蒙古陶瓷艺术作品展。</p>`,
+ fig:[['assets/jungu_inner.jpg','入展证书']],
+ tags:['陶瓷','入展','骏骨凝香']},
+aw_liyong:{tag:'Award · 2026.06',title:'"中超利永杯·陶然新绿"青年陶艺家技能大赛 · 新锐奖《沃土生花》',
+ meta:[['奖项','新锐奖'],['作品','《沃土生花》'],['主办','江苏省陶瓷行业协会 · 宜兴市陶瓷行业协会'],['时间','2026.6']],
+ body:`<p>作品《沃土生花》在"中超利永杯·陶然新绿"青年陶艺家技能大赛中荣获新锐奖。大赛由江苏省陶瓷行业协会与宜兴市陶瓷行业协会联合主办，评委包括陈国良、何忍群、范泽锋、邱玉林、黄志方等陶艺名家。</p>`,
+ fig:[['assets/liyong_xinrui.jpg','获奖证书']],
+ tags:['陶瓷','宜兴','新锐奖']},
+aw_wuyi:{tag:'Exhibition · 2026.04',title:'《朝颜》入展首届武义"婺州窑杯"咖啡器大奖赛',
+ meta:[['作品','《朝颜》'],['主办','浙江省陶瓷行业协会'],['时间','2026.4.20']],
+ body:`<p>作品《朝颜》入展由浙江省陶瓷行业协会主办的首届武义"婺州窑杯"咖啡器大奖赛。作品以婺州窑传统釉色转译当代咖啡器型，探索日用器皿的地域性表达。</p>`,
+ fig:[['assets/wuyi_kaoyan.jpg','入展荣誉证书']],
+ tags:['婺州窑','咖啡器','入展']},
+aw_maoyue:{tag:'Award · 2023.05',title:'2023"卯月的癸卯"首届艺术研究展 · 优秀奖',
+ meta:[['奖项','优秀奖'],['展览','"卯月的癸卯"首届艺术研究展'],['主办','混沌美术馆'],['时间','2023.5']],
+ body:`<p>作品在 2023"卯月的癸卯"首届艺术研究展中获得优秀奖（混沌美术馆）。</p>`,
+ fig:[['assets/maoyue_guimao.jpg','获奖证书 · 混沌美术馆']],
+ tags:['艺术研究展','优秀奖']},
+aw_junyun:{tag:'Award · 2026.09',title:'首届"钧韵杯"钧瓷器型设计大赛 · 三等奖《朝颜·窑色》',
+ meta:[['奖项','三等奖'],['作品','《朝颜·窑色》'],['主办','郑州轻工业大学教务处 · 河南省轻大钧陶瓷产业技术研究院'],['编号','JYB2026N021'],['时间','2026.9.17']],
+ body:`<p>作品《朝颜·窑色》荣获首届"钧韵杯"钧瓷器型设计大赛三等奖。作品将晨颜花意与钧釉窑变语言结合，探索传统钧瓷器型在当代设计中的转译。</p>`,
+ fig:[['assets/junyun_cup.jpg','荣誉证书']],
+ tags:['钧瓷','器型设计','三等奖']},
+aw_jiangxi:{tag:'Award · 2026.01',title:'江西文旅高校创意大赛"全球学子嘉游赣" · 创意视频三等奖',
+ meta:[['奖项','创意视频 三等奖'],['获奖者','同文平、嵇鸿轩'],['主办','"江西风景独好"× 同程旅行 · 江西文旅高校创意大赛'],['时间','2026.1']],
+ body:`<p>与同文平合作的创意视频作品，在"全球学子嘉游赣·无限青春创意赋能"江西文旅高校创意大赛中荣获创意视频三等奖。</p>`,
+ fig:[['assets/jiangxi_wenlv.jpg','获奖证书']],
+ tags:['创意视频','文旅','三等奖']},
+aw_wenmai:{tag:'Award · 2023',title:'2023 首届两岸数字艺术设计年度奖 · 铜奖《文脉》',
+ meta:[['奖项','铜奖'],['组别','研究生版务组"龙的传人"'],['作品','《文脉》'],['单位','澳门科技大学'],['主办','海峡两岸交流促进基金会 等']],
+ body:`<p>数字艺术设计作品《文脉》（研究生版务组"龙的传人"主题，作品编号 2023100621440748882）获 2023 年首届两岸数字艺术设计年度奖铜奖，作者身份为负责人，署名单位为澳门科技大学。组委会包括海峡两岸交流促进会、喜扬旅游文化发展协会等。</p>`,
+ fig:[['assets/wenmai2023.jpg','铜奖证书 ·《文脉》']],
+ tags:['数字艺术','两岸','铜奖']},
+aw_huaxia:{tag:'Award · 2023',title:'第二届华夏奖海峡两岸非遗文创设计大赛 · 优秀奖《螺钿——四象图之青龙》',
+ meta:[['奖项','优秀奖'],['作品','《螺钿——四象图之青龙》'],['作者','叶飞扬、黄巍薇、嵇鸿轩、李松芷'],['单位','澳门科技大学']],
+ body:`<p>以传统螺钿工艺转译四象青龙意象的文创设计《螺钿——四象图之青龙》，获 2023 第二届华夏奖海峡两岸非遗文创设计大赛优秀奖（团队合作）。</p>`,
+ fig:[['assets/huaxia2023.jpg','优秀奖证书']],
+ tags:['非遗文创','螺钿','团队合作']},
+
+/* ---- 研修：文化遗产 · 艺术 · 修复 ---- */
+tr_caa:{tag:'Program · 2025.04',title:'中国美术学院龙泉研究院 · 数字建模与设计培训',
+ meta:[['项目','剑瓷从业人员培训项目——数字建模与设计课程'],['结果','考评合格 · 结业']],
+ body:`<p>掌握三维扫描仪及 C4D、ZBrush 建模软件使用，实现文物纹样数字采集、处理与二次创作。</p>`,
+ fig:[['assets/caa_digital.jpg','结业证书 · 中国美术学院龙泉研究院']],
+ tags:['三维扫描','C4D','ZBrush','文物数字化']},
+tr_fix:{tag:'Program · 2024.09',title:'全国文博网络学院 · 陶瓷文物修复知识线上培训班',
+ meta:[['主办','全国文博网络学院'],['时间','2024.9.12 — 9.26'],['学时','7.14 课时'],['结果','结业（证字第 2024B33010105 号）']],
+ body:`<p>参加"2024 年陶瓷文物修复知识线上培训班"并完成全部课时，系统学习陶瓷文物修复的知识体系与操作规范，与其陶瓷考古修复、金缮修复实践互为支撑。</p>`,
+ fig:[['assets/cert_ceramic_fix.jpg','结业证书 · 全国文博网络学院']],
+ tags:['陶瓷修复','文博培训']},
+tr11:{tag:'Program · 2024.07',title:'北京大学 · 流域文明研究生暑期学校',
+ meta:[['主办','北京大学研究生院'],['主题','城乡建成环境文化遗产理论与方法'],['学分','2 学分'],['结果','课程考试合格 · 结业']],
+ body:`<p>参加北京大学 2024 年度"研究生教育创新计划"城乡建成环境文化遗产理论与方法：流域文明研究生暑期学校课程学习（计 2 学分），通过规定课程考试，成绩合格，获结业证书（证书编号〔2024〕195077）。</p>`,
+ fig:[['assets/pku_river.jpg','结业证书 · 北京大学研究生院（证件号已模糊）']],
+ tags:['文化遗产','流域文明','暑期学校']},
+tr_sxmuseum:{tag:'Training · 2024.04',title:'山西省博物馆协会 · 2024 年度博物馆藏品管理培训班',
+ meta:[['主办','山西省博物馆协会'],['时间','2024.4.25 — 4.29'],['学时','20 学时'],['结果','完成全部学时 · 结业']],
+ body:`<p>参加山西省博物馆协会主办的 2024 年度博物馆藏品管理培训班（20 学时），系统学习藏品登记、建档、保管与环境控制等博物馆藏品管理基础工作方法，与其石窟壁画整理和文物修复实践互补。</p>`,
+ fig:[['assets/sxmuseum2024.jpg','结业证书 · 山西省博物馆协会（证件号已模糊）']],
+ tags:['博物馆','藏品管理','培训']},
+tr13:{tag:'Program · 2024.05 — 2024.06',title:'陆海之约"一带一路"艺术互鉴计划（2024）广东江门工作营',
+ meta:[['主办','"一带一路"艺术互鉴计划组委会（四川美术学院艺术人文学院代章）'],['地点','广东江门（侨乡）'],['结果','结业证书']],
+ body:`<p>结合岭南艺术发展现状，线上与实地多维度并行，对江门侨乡进行实地考察；通过理论讲解、实地调查、与传承人的交流以及学员共创，完成工作营的在地工作。</p>`,
+ fig:[['assets/obor_jiangmen.jpg','结业证书']],
+ tags:['侨乡','岭南艺术','在地创作']},
+
+/* ---- 研修：语言 · 古典学 · 文学 ---- */
+tr_cunei:{tag:'Program · 2026.08',title:'浙江师范大学"楔形文字入门"线上暑期学校',
+ meta:[['主办','浙江师范大学人文学院文明古国研究院'],['时间','2026.8.3 — 8.10'],['课程','苏美尔语入门 · 阿卡德语入门'],['结果','修读合格 · 学习证明']],
+ body:`<p>系统完成两门古典语言入门课程：苏美尔语（Sumerian）与阿卡德语（Akkadian），接触两河流域楔形文字文献的转写与释读基础，服务于美术史与古代文明研究的语言工具储备。</p>`,
+ fig:[['assets/cert_bjforum.jpg','学习证明（中文）'],['assets/cert_cuneiform.jpg','Certificate（英文）']],
+ tags:['苏美尔语','阿卡德语','楔形文字','古典学']},
+tr_latin:{tag:'Program · 2025 & 2026',title:'Classics Convoy / Philosophy Vessel · 拉丁语与古典课程',
+ meta:[['主办','Philosophy Vessel（Forum Linguae）· Classics Convoy'],['课程','Forum Linguae Summer 2025 拉丁语课程 · Forum Linguae 拉丁语结业课程'],['荣誉','Forum Linguae Maxima Cum Laude（最优等）'],['结果','结业证书 × 2']],
+ body:`<p>先后完成古典学教育项目 Philosophy Vessel / Classics Convoy 开设的两期拉丁语课程：<b style="color:var(--gold-bright);font-weight:400">Forum Linguae Summer 2025 拉丁语课程</b>（以 Maxima Cum Laude 最优等结业）与 Forum Linguae 拉丁语语言与文学课程。课程涵盖拉丁语语法、古典文献阅读与罗马文化。</p>`,
+ fig:[['assets/forum_linguae.jpg','Certificate · Forum Linguae Summer 2025（Maxima Cum Laude）'],['assets/cert_latin.jpg','Certificate of Latin Completion']],
+ tags:['拉丁语','古典学','最优等结业']},
+tr_lplus:{tag:'Program · 2026.08',title:'第三届 Truly Global /L+/ 语言习得国际暑期学校',
+ meta:[['主办','Truly Global /L+/ Summer/Winter School on Language Acquisition'],['形式','线上（全球）'],['时间','2026.8.24 — 8.28'],['结果','参与证书']],
+ body:`<p>参加第三届 /L+/ 语言习得（Language Acquisition）国际暑期学校，围绕二语习得、多语能力与语言教育议题与国际学者交流。</p>`,
+ fig:[['assets/cert_langacq.png','Badge of Attendance']],
+ tags:['语言习得','语言学','国际暑校']},
+tr10:{tag:'Program · 2024.07',title:'厦门大学电影学院"戏曲与非遗工作坊"暑期学校',
+ meta:[['主办','厦门大学电影学院'],['结果','结业']],
+ body:`<p>于 2024 年 7 月 5 日至 10 日参加厦门大学电影学院 2024 年度"戏曲与非遗工作坊暑期学校"，通过规定的课程考核，成绩合格，准予结业。</p>`,
+ fig:[['assets/xmu_opera.jpg','结业证书 · 厦门大学电影学院']],tags:['戏曲','非遗']},
+tr14:{tag:'Program · 2023.07',title:'山东大学 · 中华古典学术传承创新学术讲坛',
+ meta:[['主办','山东大学'],['成果','完成论文《张田饼印图像民俗学研究》']],
+ body:`<p>学习民俗学、历史学、汉语言文学、文献学等多学科知识，加深对民俗学的理解，完成论文《张田饼印图像民俗学研究》。</p>`,
+ fig:[['assets/shandong_classics.jpg','结业证书 · 山东大学儒学高等研究院']],
+ tags:['民俗学','文献学','古典学术']},
+
+/* ---- 研修：田野 · 人类学 · 方法 ---- */
+tr_quali:{tag:'Program · 2026.07',title:'QualiTaTi 暑期学校 · AI for Qualitative Research',
+ meta:[['主办','QualiTaTi（巴黎）'],['时间','2026.7.7 — 7.14'],['学时','36 小时（8 教学 + 28 实操）'],['成绩','A（90.33 / 100）']],
+ body:`<p>系统学习 AI 辅助质性研究的理论与实操：AI 编码、主题分析与大语言模型在质性资料分析中的方法边界，完成全部实操作业并获最优档成绩 A（90.33/100）。</p>`,
+ fig:[['assets/qualitati2026.jpg','Certificate of Completion · Grade A']],
+ tags:['AI 质性研究','NVivo','文本分析','大语言模型']},
+tr_anthro26:{tag:'Program · 2026.06',title:'第六届全国大学生人类学训练营',
+ meta:[['主办','浙江大学人类学研究所（合办）'],['时间','2026.6.22 — 6.26'],['结果','完成全部课程 · 结业']],
+ body:`<p>连续第二年入选全国大学生人类学训练营（公益科普教育项目），完成人类学田野调查方法与质性研究全部课程。</p>`,
+ fig:[['assets/cert_anthro2026.jpg','结业证书 · 浙江大学人类学研究所']],
+ tags:['人类学','质性研究']},
+tr5:{tag:'Program · 2025.07',title:'清华大学"大数据与因果推断研讨班"',
+ meta:[['主办','清华大学计算社会科学与国家治理实验室'],['项目','清华交叉学科研究能力提升计划'],['结果','结业 · 获参与证明']],
+ body:`<p>系统学习大数据分析与因果推断研究方法，拓展人文社科研究的量化分析能力。</p>`,
+ fig:[['assets/thu_bigdata.jpg','参与证明 · 清华大学']],
+ tags:['大数据','因果推断','量化研究']},
+tr_anthro25:{tag:'Program · 2025.06',title:'第五届全国大学生人类学训练营',
+ meta:[['主办','浙江大学人类学研究所（合办）'],['时间','2025.6.23 — 6.27'],['结果','完成全部课程 · 结营证书']],
+ body:`<p>完成人类学田野调查方法、质性研究等全部课程，获结营证书。</p>`,
+ fig:[['assets/cert_anthro2025.jpg','结营证书 · 浙江大学人类学研究所']],
+ tags:['人类学','质性研究']},
+tr8:{tag:'Program · 2024.12',title:'北京大学"美好的对话"UNESCO 乡创教席口述计划',
+ meta:[['主办','北京大学 · 联合国教科文组织乡创教席'],['时间','2024.12 — 2025.04'],['结果','采写志愿者 · 获志愿证明（No.2025062）']],
+ body:`<p>通过前期课程培训学习口述史的研究方法和策略、中国农村的乡土中国与城乡变迁；后期对乡村对象进行口述记录，形成口述史。2024 年 12 月至 2025 年 4 月在联合国教科文组织乡村创意与可持续发展教席组织的"美好的对话——乡村口述记忆"项目中担任采写志愿者，获教席颁发的志愿证明。</p>`,
+ fig:[['assets/unesco_talk.jpg','志愿证明 · UNESCO 乡村创意与可持续发展教席']],
+ tags:['口述史','乡村振兴','志愿者']},
+tr_apyc:{tag:'Workshop · 2025.03',title:'APYC 亚太青年互鉴局 ·"从田野调研到智库建设"青年实践能力建设工作坊',
+ meta:[['主办','APYC 亚太青年互鉴局（Asia-Pacific Youth Conservation）'],['时间','2025.03'],['结果','完成全部课程 · 参与证书']],
+ body:`<p>参加 APYC 亚太青年互鉴局主办的"从田野调研到智库建设：青年实践能力建设工作坊"，完成全部课程并获参与证书。工作坊立足联合国可持续发展目标（SDG）框架，训练从田野调研到政策建议的完整实践链条。</p>`,
+ fig:[['assets/apyc2025.jpg','参与证书 · APYC']],
+ tags:['田野调研','智库','SDG','青年工作坊']},
+tr9:{tag:'Program · 2024.08',title:'上海师范大学"到田野去"数字化田野研究训练营',
+ meta:[['主题','数字化田野研究'],['结果','结业']],
+ body:`<p>学习人类学"田野"的重要性及田野调查方法在新时代的转向；通过个案学习图像分析基本方法；探讨 NLP、AI 技术（尤其是 ChatGPT）在田野研究中的应用；学习数字民族志、数字日记方法及文本分析。</p>`,
+ fig:[['assets/daotianye24.jpg','结业证书 ·"到田野去"数字化田野研究 2024 夏季训练营']],
+ tags:['数字民族志','NLP','AI 辅助研究']},
+
+/* ---- 研修：国际课程 · 认证 ---- */
+tr_sustain:{tag:'Program · 2026.08',title:'SustainMV 2026 · 德国大学联盟可持续发展暑期学校',
+ meta:[['主办','德国梅克伦堡-前波莫瑞州全部高校联合（SustainMV）'],['形式','线上（2026.8.18 — 8.20）'],['结果','Certificate of Participation']],
+ body:`<p>参加德国梅前州大学联盟联合呈现的可持续发展暑期学校，主题覆盖旅游可持续、可再生能源、数字与创新、循环与废弃物管理、生态系统与社会可持续等方向，包括海岸线遥感监测、环境心理学与海洋友好行为等前沿讲座。</p>`,
+ fig:[['assets/sustainmv2026.jpg','Certificate · SustainMV 2026']],
+ tags:['可持续发展','环境议题','德国']},
+tr_sas:{tag:'Program · 2026.08',title:'SAS Analytics Summer School',
+ meta:[['主办','SAS Institute（德国）'],['时间','2026.8.17 — 8.18'],['结果','结业证书']],
+ body:`<p>参加 SAS 分析暑期学校（2026.8.17 — 8.18），学习覆盖"数据准备—发现—分析—部署"全流程的分析生命周期（Analytical Lifecycle），并上机实操 SAS Visual Analytics。</p>`,
+ fig:[['assets/sas2026.jpg','Certificate · SAS Analytics Summer School']],
+ tags:['数据分析','SAS','可视化分析']},
+tr_liberec:{tag:'Program · 2026.08',title:'捷克利贝雷茨技术大学纺织工程学院暑期学校',
+ meta:[['主办','Technical University of Liberec · Faculty of Textile Engineering'],['课程','Design, Production, Modelling and Analysis of 1D & 2D Textile Structures'],['学分','6 ECTS（Construction and Properties of Yarns）'],['形式','线上虚拟访学 · Erasmus 框架']],
+ body:`<p>以虚拟短期访学形式参加利贝雷茨技术大学纺织工程学院暑期学校，完成《纱线的构造与性能》（Construction and Properties of Yarns）课程并通过考核，依欧洲学分互认体系（ECTS）获得 6 学分。</p>`,
+ fig:[['assets/cert_ects.jpg','ECTS 学分证明 · Transcript of Records']],
+ tags:['材料科学','纺织','ECTS','虚拟访学']},
+tr_law:{tag:'Program · 2026.05 — 06',title:'School of Law Summer School 2026 · "Emerging Issues in Law"',
+ meta:[['主办','School of Law and Social Sciences'],['时间','2026.5.25 — 6.1'],['结果','Certificate of Attendance']],
+ body:`<p>全程参加法学院国际暑期学校"Emerging Issues in Law（法律前沿议题）"（2026.5.25 — 6.1），接触比较法与新兴法律议题。</p>`,
+ fig:[['assets/lawschool2026.jpg','Certificate of Attendance']],
+ tags:['法学','比较法','国际暑校']},
+tr4:{tag:'Program · 2026.03',title:'《濒危考古：利用遥感技术保护文化遗产》联合课程',
+ meta:[['院校','杜伦大学 · 英国文化协会 · 莱斯特大学 · 牛津大学'],['时长','6 周 · 每周 3 小时'],['结果','Certificate of Achievement（2026.3.19）']],
+ body:`<p>学习卫星遥感基础与 Google Earth Pro 操作，掌握考古遗址识别、威胁评估与地图绘制技能，可应用于文化遗产数字化保护。授课团队包括杜伦大学考古系 Graham Philip 教授与 Dan Lawrence 副教授。</p>`,
+ fig:[['assets/endangered_arch.jpg','Certificate of Achievement']],
+ tags:['遥感考古','文化遗产数字化']},
+tr3:{tag:'Program · 2026.03',title:'牛津大学赛德商学院 × UNESCO：政府 AI 与数字化转型 CPD 认证',
+ meta:[['认证','CPD 继续教育认证'],['结果','结业']],
+ body:`<p>完成牛津大学赛德商学院与联合国教科文组织联合开设的"政府 AI 与数字化转型"课程，获 CPD 认证；课程由 UNESCO 数字政策总监 Guilherme Canela 与牛津 Saïd Online 执行总监联署认证（2026.3.31），聚焦人工智能在政府治理与数字化转型中的应用。</p>`,
+ fig:[['assets/oxford_said.jpg','CPD 认证证书 · Oxford Saïd × UNESCO']],
+ tags:['AI 治理','数字化转型','UNESCO']},
+tr1:{tag:'Program · 2026.04',title:'意大利博洛尼亚大学 GlocalEAST 课程',
+ meta:[['课程','GlocalEAST：中东欧移民、边境与离散社群'],['授课','Marco Puleri 教授'],['项目','European Project GlocalEAST-101'],['结果','结业证明（2026.4.16）']],
+ body:`<p>完成意大利博洛尼亚大学"中东欧移民、边境与离散社群"（GlocalEAST: Migration, Borders and Diaspora in East-Central Europe）课程，拓展对欧洲边境、移民与区域研究议题的理解。</p>`,
+ fig:[['assets/unibo_glocal.jpg','Certificato · UniBO Open Knowledge']],
+ tags:['边境研究','移民研究','中东欧']},
+tr2:{tag:'Program · 2026.04',title:'WIPO 世界学院 PCT 专利合作条约课程',
+ meta:[['课程','PCT 远程教学课程：专利合作条约介绍'],['主办','WIPO 世界学院（学院院长陈宏兵署名）'],['结果','结业证书（2026.4.13）']],
+ body:`<p>完成世界知识产权组织（WIPO）世界学院 PCT 远程教学课程《专利合作条约介绍》，了解国际专利申请体系与知识产权保护框架。</p>`,
+ fig:[['assets/wipo_pct.jpg','结业证书 · WIPO 世界学院']],
+ tags:['知识产权','WIPO','PCT']},
+tr12:{tag:'Program · 2024.07',title:'北京大学第七届"京港澳台"人口老龄化专题夏令营',
+ meta:[['主办','北京大学人口研究所 · 夏令营组委会'],['时间','2024.7.1 — 7.11'],['结果','参加 · 获参会证书']],
+ body:`<p>参加北京大学人口研究所主办的第七届"京港澳台"人口老龄化专题夏令营活动（2024.7.1 — 7.11），围绕人口老龄化的跨区域议题与京港澳台四地学者交流学习，表现良好，准予结业。</p>`,
+ fig:[['assets/jgaotai2024.png','参会证书 · 夏令营组委会']],
+ tags:['人口研究','老龄化','跨区域交流']},
+
+tr_umac:{tag:'Program · 2023.08',title:'澳门大学社会科学学院 · 2023 内地研究生及大学生暑期研习营',
+ meta:[['主办','澳门大学 社会科学学院（Faculty of Social Sciences, University of Macau）'],['时间','2023.8.6 — 8.12'],['结果','结业证书']],
+ body:`<p>参加澳门大学社会科学学院举办的"2023 内地研究生及大学生暑期研习营"（Summer Camp Programme 2023），完成全部课程，获院长胡伟星教授（Prof. Richard Weixing HU）签署的结业证书。</p>`,
+ fig:[['assets/umac2023.jpg','结业证书 · 澳门大学社会科学学院']],
+ tags:['澳门大学','暑期研习营','社会科学']},
+tr_shouzhou:{tag:'Program · 2026.07',title:'国家艺术基金 2026《寿州窑创新技艺人才培训》',
+ meta:[['资助','国家艺术基金 2026 年度艺术人才培养资助项目'],['主办','淮南师范学院美术与设计学院'],['角色','正式学员'],['报到','2026.7.4 · 安徽淮南']],
+ body:`<p>经专家组评审，被录取为国家艺术基金 2026 年度艺术人才培养资助项目《寿州窑创新技艺人才培训》学员。<b style="color:var(--gold-bright);font-weight:400">关于国家艺术基金</b>：由国家设立、文化和旅游部管理的国家级艺术资助体系，与国家社科基金艺术学项目共同构成我国艺术领域最高层级的资助渠道；其"艺术人才培养"项目面向全国公开申报，经资格审核、专家委员会多轮匿名评审后方可立项录取，每年全国入选名额有限、竞争激烈，是艺术类专业实践中公认的高含金量国家级研修资历。本项目聚焦寿州窑制瓷技艺的传承与创新，与其陶瓷创作与修复实践直接相关；行前系统研读淮南市博物馆编著《寿州窑》（文物出版社）等专著。</p>`,
+ fig:[['assets/shouzhouyao.jpg','录取通知书 · 国家艺术基金 / 淮南师范学院']],
+ tags:['国家艺术基金','寿州窑','技艺传承']},
+tr_taocamp:{tag:'Program · 2024.07 — 08',title:'2024 暑期国际高校陶瓷交流创作营（龙泉）',
+ meta:[['时间','2024.7.29 — 8.29'],['地点','浙江龙泉'],['主办','清华大学美术学院（重点实验室）联合中央美术学院、中国美术学院、南京艺术学院、韩国弘益大学等国内外高校'],['结果','结营展参展']],
+ body:`<p>参加 2024 暑期国际高校陶瓷交流创作营（2024 Summer International Ceramic Exchange and Creation Camp for Colleges and Universities）。创作营汇聚央美、国美、清华、南艺及韩国弘益大学、韩国祥明大学、日本武藏野美术大学等多校师生，在龙泉进行为期一月的陶瓷创作交流，作品参加结营展（"2024暑期 国际大学陶瓷交流创作ワークショップ开幕展"）。</p>`,
+ fig:[['assets/taocamp2024.jpg','结营展海报']],
+ tags:['国际创作营','龙泉','陶瓷交流']},
+tr_ngs:{tag:'Program · 2026.03',title:'新加坡国家美术馆 · "东南亚艺术与环境"系列课程',
+ meta:[['主办','National Gallery Singapore'],['课程一','Landscape as Ideology（景观作为意识形态）· 5 周'],['课程二','Environment as Contested Space（作为争夺空间的环境）· 6 周'],['授课','Dr Seng Yu Jin（策展与研究总监）'],['结果','Certificate of Achievement × 2（2026.3.21）']],
+ body:`<p>完成新加坡国家美术馆"东南亚艺术与环境"两门美术史课程：前者探讨 19 世纪末—20 世纪初东南亚艺术中景观背后的殖民与国族建构意识形态；后者研究 1970 年代东南亚艺术家如何以艺术回应环境退化、城市贫困与社会不平等（Nirmala Dutt、Tang Da Wu 等艺术家个案）。由策展与研究总监孙玉金博士授课。</p>`,
+ fig:[['assets/ngs_sea1.jpg','Certificate · Landscape as Ideology'],['assets/ngs_sea2.jpg','Certificate · Environment as Contested Space']],
+ tags:['东南亚美术史','环境艺术','新加坡国家美术馆']},
+tr_longquan:{tag:'Program · 2024.11',title:'景德镇陶瓷大学龙泉研究院 · 大地艺术工作营 & 琉璃工作营（一期）',
+ meta:[['主办','景德镇陶瓷大学龙泉研究院'],['课程','大地艺术工作营（一期）· 琉璃工作营（一期）'],['时间','2024.11'],['结果','全部课程结业 · 结业证书 × 2']],
+ body:`<p>在景德镇陶瓷大学龙泉研究院先后完成"大地艺术工作营（一期）"与"琉璃工作营（一期）"全部课程并结业。大地艺术部分探讨在地材料与场域创作，琉璃部分涉及玻璃材料的成型与烧制工艺。</p>`,
+ fig:[['assets/longquan_workshop.jpg','结业证书 × 2 · 景德镇陶瓷大学龙泉研究院']],
+ tags:['大地艺术','琉璃','龙泉']},
+tr_romanum:{tag:'Program · 2026',title:'Classics Convoy · "Forum Romanum" 罗马历史文化课程',
+ meta:[['主办','Classics Convoy（Philosophy Vessel）'],['课程','Forum Romanum：罗马历史与文化'],['结果','Certificate of Completion · Distinction']],
+ body:`<p>完成 Classics Convoy 2026 年"Forum Romanum"课程，系统学习罗马历史与文化，以 Distinction（优异）评价结业。与拉丁语课程共同构成其古典学训练序列。</p>`,
+ fig:[['assets/forum_romanum.jpg','Certificate of Completion']],
+ tags:['罗马史','古典学','Distinction']},
+tr_histanthro:{tag:'Program · 2026.04',title:'Stepik · Historical Anthropology 历史人类学课程',
+ meta:[['平台','Stepik'],['课程','Historical Anthropology'],['成绩','83 / 100'],['时间','2026.4.2']],
+ body:`<p>完成 Stepik 平台"历史人类学"（Historical Anthropology）课程，成绩 83 分。课程覆盖历史学与人类学的交叉方法论，为其村寨志编撰与信俗研究提供理论支撑。</p>`,
+ fig:[['assets/stepik_histanthro.jpg','Certificate · Stepik']],
+ tags:['历史人类学','方法论','课程']},
+tr_advremote:{tag:'Program · 2026.03',title:'《高级考古遥感：遗址勘探、景观考古与遗产保护》联合课程',
+ meta:[['院校','杜伦大学 · 英国文化协会 · 莱斯特大学 · 牛津大学'],['区域','中东与北非'],['时长','6 周 · 每周 3 小时'],['结果','Certificate of Achievement']],
+ body:`<p>进阶版考古遥感课程：学习真彩色、多光谱与雷达影像的理论与应用，结合历史地图与影像进行地理配准，并使用 QGIS 制作高质量考古地图，应用于中东与北非地区的遗址勘探与遗产保护。</p>`,
+ fig:[['assets/advanced_remote.jpg','Certificate of Achievement']],
+ tags:['遥感考古','QGIS','景观考古']},
+tr_tohoku:{tag:'Program · 2026.03',title:'日本东北大学 · "社会中的 AI"高度教养课程（ga149）',
+ meta:[['主办','日本东北大学（東北大学）'],['课程','ga149：社会の中の AI ～人工知能の技術と人間社会の未来展望～'],['系列','東北大学で学ぶ高度教養シリーズ'],['结果','修了証（2026.3.31）']],
+ body:`<p>完成日本东北大学"高端教养系列"之《社会中的 AI》课程（ga149），从工学、医学、教育学等多学科视角学习人工智能技术及其对人类社会的未来影响，获总长署名修了证明。</p>`,
+ fig:[['assets/tohoku_ai.jpg','修了証 · 東北大学']],
+ tags:['AI 与社会','日本东北大学','高度教养']},
+tr_prearch:{tag:'Program · 2026.04',title:'意大利博洛尼亚大学 · Preventive Archaeology 预防性考古课程',
+ meta:[['主办','博洛尼亚大学 UniBO Open Knowledge · 历史与文化系'],['授课','Prof. Nicolò Marchetti'],['项目','European Project BANUU-101'],['结果','结业证明（2026.4.16）']],
+ body:`<p>完成博洛尼亚大学"预防性考古"（Preventive Archaeology）课程，课程属欧洲项目 BANUU-101，由近东考古学教授 Nicolò Marchetti 授课，内容涵盖考古遗址预防性保护与文化资源管理。</p>`,
+ fig:[['assets/unibo_prearch.jpg','Certificato · UniBO Open Knowledge']],
+ tags:['预防性考古','博洛尼亚大学','遗产保护']},
+tr_baker:{tag:'Program · 2026.03',title:'BBC Good Food × FutureLearn 烘焙系列课程',
+ meta:[['主办','BBC Good Food（FutureLearn 平台）'],['课程','ExpertTrack"Become a Successful Baker" + 4 门单项课程'],['课程明细','下午茶烘焙 · 派与挞 · 酸面团 · 庆典蛋糕'],['成绩','单项课程总评分均 100%']],
+ body:`<p>系统完成 BBC Good Food 在 FutureLearn 上开设的烘焙专家课程组：包括 ExpertTrack"成为成功的烘焙师"及下午茶（司康、玛德琳、闪电泡芙、马卡龙）、派与挞（酥皮四大工艺）、酸面团（天然酵种养护）、庆典蛋糕（结构与镜面淋面）四门单项课程，全部以 100% 总评分通过。</p>`,
+ fig:[['assets/baker_expert.jpg','ExpertTrack Certificate'],['assets/baker_tea.jpg','Afternoon Tea · 100%'],['assets/baker_sour.jpg','Sourdough · 100%'],['assets/baker_pie.jpg','Pies & Tarts · 100%'],['assets/baker_cake.jpg','Showstopper Cakes · 100%']],
+ tags:['烘焙','BBC Good Food','生活技艺']},
+tr_baker3:{tag:'Certificate · 2025.09',title:'职业技能等级证书 · 中式糕点师（高级工 / 三级）',
+ meta:[['职业','糕点面包烘焙师'],['工种','中式糕点师'],['等级','高级工（三级）'],['颁发','龙泉市技能大赛组委会 · 2025.9.26']],
+ body:`<p>经龙泉市职业技能等级认定，获得糕点面包烘焙师（中式糕点师方向）高级工（三级）职业技能等级证书（证书编号 S000033902000253J50439）。</p>`,
+ fig:[['assets/baker_full.jpg','职业技能等级证书 · 中式糕点师（证件号已模糊）']],
+ tags:['中式糕点','职业技能','高级工']},
+tr_pingcha:{tag:'Certificate · 2025.06',title:'职业技能等级证书 · 评茶师（高级工 / 三级）',
+ meta:[['职业','评茶师'],['等级','高级工（三级）'],['颁发','龙泉市技能大赛组委会'],['时间','2025.6.17']],
+ body:`<p>经龙泉市职业技能等级认定，获得评茶师（高级工 / 三级）职业技能等级证书（证书编号 S000033902000253J50200），系统掌握茶叶感官审评与品质分级方法。</p>`,
+ fig:[['assets/pingcha.jpg','职业技能等级证书 · 评茶师（证件号已模糊）']],
+ tags:['评茶师','茶学','职业技能']},
+tr_ceramicmaker:{tag:'Certificate · 2024.08',title:'职业技能等级证书 · 陶瓷工艺品制作师（成型师 · 初级工/五级）',
+ meta:[['职业','陶瓷工艺品制作师'],['工种','陶瓷工艺品成型师'],['等级','初级工（五级）'],['颁发','龙泉青瓷宝剑技师学院'],['时间','2024.8.29']],
+ body:`<p>在龙泉青瓷宝剑技师学院完成青瓷刻花技艺培训（2024.8.5 — 8.19，共计 112 学时）并顺利结业，通过陶瓷工艺品制作师技能考核，获陶瓷工艺品成型师（初级工 / 五级）职业技能等级证书——从图像研究回到手上功夫的系统性训练。</p>`,
+ fig:[['assets/cert_potter.jpg','职业技能等级证书 · 陶瓷工艺品制作师（成型师·五级）']],
+ tags:['陶瓷工艺','成型师','青瓷刻花','职业技能']},
+tr_redcross:{tag:'Certificate · 2024.11',title:'红十字救护员证 & CPR + AED 培训',
+ meta:[['证书','红十字救护员证'],['培训','CPR + AED（心肺复苏与自动体外除颤器）'],['发证','龙泉市红十字会'],['时间','2024.11']],
+ body:`<p>依据《中华人民共和国红十字会法》完成救护培训并考核合格，获红十字救护员证（每 3 年复训）；同期完成中国红十字会 CPR + AED 专项培训。为山地户外与田野工作提供安全保障能力。</p>`,
+ fig:[['assets/cpr_aed.jpg','CPR + AED 培训证书 · 中国红十字会']],
+ tags:['急救','CPR','AED','红十字会']},
+tr_mount:{tag:'Certificate · 2024.10',title:'中国登山协会 · 一级山地户外运动水平',
+ meta:[['等级','一级山地户外运动水平'],['证书','等级证书 + 技能培训证书'],['主办','中国登山协会'],['时间','2024.10']],
+ body:`<p>参加中国登山协会一级山地户外运动水平培训班，完成全部课程并通过考核，达到一级山地户外运动水平等级标准（等级证书编号 OASL2024-10-0341）。支撑其田野调查与石窟考察中的山地作业能力。</p>`,
+ fig:[['assets/mount_level.jpg','等级证书'],['assets/mount_train.jpg','技能培训证书']],
+ tags:['山地户外','登山协会','田野保障']},
+
+/* ---- 论文 ---- */
+pb6:{tag:'Conference Presentation · 2026.09',title:'《澳门墓葬场存的历史演变及其文明互鉴启示》',
+ meta:[['会议','区域国别学·北京论坛 2026'],['主办','北京第二外国语学院区域国别研究中心、区域国别学院'],['时间','2026.9.12 — 9.13'],['形式','分论坛论文宣讲']],
+ body:`<p>在"区域国别学·北京论坛 2026"分论坛进行论文宣讲，从区域国别研究视角讨论澳门墓葬场存的历史演变及其文明互鉴启示。</p>`,
+ fig:[['assets/award_yunnan.jpg','论文宣讲证明 · 北京第二外国语学院']],
+ tags:['区域国别研究','澳门','论文宣讲']},
+pb5:{tag:'Conference Paper · 2026.08',title:'The Forgotten Emotional Geography: Emotion, Memory and Cross-Cultural Empathy in the Cemeteries and Tombstone Architecture of Modern Macao',
+ meta:[['会议','第三届全球南方研究国际学术研讨会'],['主办','越南胡志明国家人文社科大学（USSH-VNUHCM）'],['时间','2026.8.21 — 8.23'],['形式','口头报告']],
+ body:`<p>讨论近代澳门墓地与墓碑建筑中被遗忘的情感地理——情感、记忆与跨文化共情。</p>
+ <div class="sub">摘要评审</div><ul><li>摘要（Abstract #279，2026.4）评审均分 3.83 / 5，其中理论框架与文献引用两项获 5/5</li></ul>`,
+ fig:[['assets/south_conf.jpg','大会录用函']],
+ tags:['情感地理','全球南方','英文报告']},
+pb4:{tag:'Conference Paper · 2026.05',title:'Space and Culture: A Study on the Historical Evolution of Cemeteries and Tombstone Architecture in Modern Macao',
+ meta:[['会议','International Migration & Intercultural Communication: A Cross-Disciplinary Student Congress（Edinburgh Student Congress 2026）'],['主办','爱丁堡大学 历史、古典与考古学院'],['时间','2026.5.11 — 5.12'],['形式','口头报告（15 分钟）· 收录待发于《sine》（2026）']],
+ body:`<p>在爱丁堡学生大会 2026"国际移民与跨文化交流"跨学科分会场进行口头报告（15 分钟）。报告与罗马第一大学（Sapienza University of Rome）的 Shangao Chen 合作完成。会议获爱丁堡大学官方邀请（邀请函由中世纪史教授 Charles West 联署，用于签证支持），并获大会官方参与证书。</p>
+ <div class="sub">Abstract</div><p>Burial heritage is often treated as background, but it can be read as historical evidence. Instead of treating cemeteries as isolated sites or funerary art, this paper reads them as material sources for colonial urban history and intercultural communication, asking how burial spaces and tombstone forms registered Macao's transition from separate governance to plural coexistence. Seventeen cemeteries across the Macao Peninsula (6, colonial core, Western-style / religiously marked), Taipa (5, transition zone, municipal and community forms) and Coloane (6, village society, Chinese-style / clan memory) are read together as a cross-cultural archive, focusing on spatial distribution, historical phases, religious plurality and hybrid tombstone symbols, on the basis of fieldwork, written records and tombstone architecture.</p>
+ <a class="dl" href="assets/paper_space_culture.pdf" target="_blank">查看会议报告 PPT（PDF）↓</a>`,
+ fig:[['assets/edinburgh_congress.jpg','爱丁堡大学大会参与证书']],
+ tags:['跨文化','澳门墓葬','爱丁堡','英文报告']},
+pb3:{tag:'Conference Paper · 2026.04',title:'Space and Culture: A Study on The Historical Evolution of Cemeteries and Tombstone Architecture in Modern Macao',
+ meta:[['会议','Postgraduate Conference 2026: Pursuing Interdisciplinary and Innovative Solutions to Global Challenges'],['主办','香港岭南大学研究院'],['时间','2026.4.15 — 4.16 · 香港'],['形式','口头报告（摘要已录用）']],
+ body:`<p>摘要于 2026 年 3 月 10 日获岭南大学研究院正式录用（Ref: 45），受邀于 2026 年 4 月 15—16 日在香港岭南大学梁方霭云艺术画廊会场进行口头报告。论文从空间与文化视角研究近代澳门墓地与墓碑建筑的历史演变，与其硕士论文一脉相承。</p>`,
+ fig:[['assets/lingnan_accept.jpg','摘要录用函 · 岭南大学研究院']],
+ tags:['空间研究','澳门','英文报告']},
+pb2:{tag:'Conference Paper · 2025',title:'《仪式实践中的共生秩序与认同调适：以贵州印江土家族村落信俗田野调查为例》',
+ meta:[['会议','"铸牢中华民族共同体意识与乡村振兴——民族民间文化遗产与乡村可持续发展"研讨会'],['形式','口头报告'],['合作者','黄竹雯'],['时间','2025.8.24 · 贵州省贵阳市 · 手上记忆博物馆']],
+ body:`<p>以贵州印江土家族村落信俗田野调查为基础，讨论仪式实践中的共生秩序与认同调适问题。论文经专家委员会严格评审被录用，并以口头报告形式在会议上展示（稿件编号 KSK-2025-011）。指导单位为中国少数民族文物协会非遗专业委员会，协办单位为华东师范大学人类学研究所。</p>
+ <a class="dl" href="assets/mmu_report.pdf" target="_blank">查看会议汇报 PPT（PDF）↓</a>`,
+ fig:[['assets/zhulao_rujian.jpg','论文入选证书']],
+ tags:['信俗','仪式研究','口头报告']},
+pb1b:{tag:'Journal Article · 2024',title:'《广东张田饼印田野调查——兼论张田饼印图像民俗学解读》',
+ meta:[['期刊','《民艺》2024 年第 1 期'],['ISSN','2096-5257'],['作者','独立作者'],['地位','个人代表作']],
+ body:`<div class="sub">内容摘要</div><p>张田饼印，是广东饼印中第一个入选省级非遗的项目，也是广东客家民俗文化的载体。糕饼印模是木雕的细小分支，其作为食品模具的实用民间工艺品也承载着中华传统的礼俗文化。通过对张田饼印的田野调查以及文献整理，运用图像民俗学的分析方法，探寻饼印雕刻中蕴含的民俗文化底蕴，丰富人们对张田饼印以及饼印相关文化的认知与了解。</p>
+ <a class="dl" href="assets/paper_bingyin.pdf" target="_blank">阅读全文 PDF ↓</a>`,
+ tags:['民艺','图像学','非遗','代表作']},
+pb1a:{tag:'Journal Article · 2021',title:'《茂名市革命遗址"寻访"记》',
+ meta:[['期刊','《炎黄地理》2021 年第 6 期'],['ISSN','2095-6185'],['作者','独立作者'],['作者单位','广东石油化工学院 文法学院'],['附属项目','广东省茂名市革命遗址普查（大创校级 + 省级立项）']],
+ body:`<div class="sub">内容提要（刊发原文卷首，逐字转录）</div><p>文章是茂名市委、市政府落实《广东省红色革命资源保护利用三年提升行动计划（2019—2021）》之《广东省革命遗址大普查的通知》工作的一次重要社会实践。通过参与茂名市革命遗址的普查、资料整理以及对茂名革命遗址的保护、开发利用的思考，为茂名市委和市政府进一步制定革命遗址保护、开发红色旅游政策提供重要依据。</p>
+ <div class="sub">正文小节</div><ul>
+ <li>茂名市革命遗址众多：2019 年起配合广东石油化工学院历史专业师生与市委党史研究室开展普查，以新民主主义革命时期遗址为主、兼顾社会主义建设时期，时间跨度 1919—1949 年，普查涵盖重要战役战斗的发生地、遗址与 发生地，重要党史人物和革命先烈的故居（旧居）、活动地等</li>
+ <li>茂名市革命遗址现状：按保护级别梳理——一级（保存较好、具重大价值）、二级（历史意义重大且具较高社会价值）、三级（已毁或原址难寻，需大力抢救），并分析保护不足的成因（保护力度不够、自然侵蚀、城市建设性破坏等）</li>
+ <li>茂名市革命遗址保护对策：修缮保护、科学规划、完善周边环境设施、组织保障、纳入城乡规划建设并与当地自然资源风土人情相结合、开发红色旅游</li></ul>
+ <div class="sub">田野记录</div><p>文中附有团队在茂南区金塘镇白土村朱也赤学堂旧址与故居的考察照片：队员记录朱也赤后代口述革命故事、在朱也赤故居测量疑似窑址文物、普查调研碑文；并记录了白土村作为革命老区"因交通偏远而一定程度'盲区'"的现状访谈。</p>
+ <a class="dl" href="assets/paper_maoming.pdf" target="_blank">刊发原文 PDF（《炎黄地理》2021 年第 6 期，页 98–100）↓</a>`,
+ tags:['革命遗址','地方史','田野调查','红色文化']},
+tr_teacher:{tag:'Certificate · 2022.07',title:'教师资格证 · 高级中学（日语）',
+ meta:[['资格种类','高级中学教师资格'],['任教学科','日语'],['认定机构','茂名市教育局'],['认定日期','2022 年 7 月 13 日'],['认定依据','《中华人民共和国教师法》《教师资格条例》']],
+ body:`<p>经教育行政部门认定，具备高级中学教师资格，任教学科为日语。该资质与 JLPT N1（2019）、大学日语六级 CJT-6（2026）等共同构成日语教学与研究的能力基础；普通话水平测试二级乙等（2022.05，成绩 83.4）为认定所依据的语言能力材料之一。</p>`,
+ fig:[['assets/cert_teacher.jpg','教师资格证（身份证号已模糊）']],
+ tags:['教师资格','日语','高级中学']},
+tr_psc:{tag:'Certificate · 2022.05',title:'普通话水平测试等级证书 · 二级乙等',
+ meta:[['等级','二级乙等'],['成绩','83.4 分'],['测试时间','2022 年 5 月 8 日'],['测试机构','广东石油化工学院普通话培训测试站'],['制证','国家语言文字工作委员会']],
+ body:`<p>普通话水平测试（PSC）成绩 83.4 分，获二级乙等。作为粤语、客家话母语者，这一国家认证补全了语言能力图谱的普通话一环，也是高级中学教师资格认定的语言能力依据。</p>`,
+ fig:[['assets/cert_psc.jpg','普通话水平测试等级证书（身份证号已模糊）']],
+ tags:['普通话','PSC','语言能力']},
+
+
+pb0:{tag:'Thesis · Master',title:'《澳门墓葬建筑图像研究》',
+ meta:[['类型','硕士毕业论文'],['院校','澳门科技大学 人文艺术学院 · 美术史研究'],['学位','美术学硕士（Master of Fine Arts）'],['完成','2024.06 通过答辩'],['英文题名','A Study on the Architectural Images of Tombstones in Macao'],['考察范围','澳门现存 17 座坟场'],['收录','澳门科技大学图书馆本校学位论文库']],
+ body:`<div class="sub">内容摘要（据澳门科技大学图书馆学位论文库著录）</div><p>澳门墓葬建筑是中西文化融合的典型代表。澳门墓地各具特色，每座墓地都与澳门城市的发展息息相关，但由于人们对墓地的忌讳，其墓葬所蕴含的宗教、文化、艺术和建筑价值却一直鲜为人知。澳门墓葬建筑的类型和图像题材多样，内容丰富，具有深厚的文化底蕴。由于受到政治、经济、文化和宗教等因素的影响，墓葬建筑图像被赋予了独特的艺术表现形式。因此，深入研究澳门墓葬建筑现状，分析墓葬建筑图像的内容、应用、文化体系、意义等问题，对于深刻阐释图像背后的观念表达、丰富澳门文化艺术和澳门美术史的研究、以及澳门文化遗产的传承与保护等方面具有重要意义。</p>
+ <div class="sub">研究方法与考察范围</div><ul>
+ <li>建筑民族志、文献研究法、图像志与图像学、跨学科研究</li>
+ <li>对澳门现存 17 座坟场的墓碑建筑，从结构、形制到图像的辨识、意义、应用作全面考察</li>
+ <li>通过实地调研分析图像的应用规律，理清图像的对应关系，阐释图像的意义，并比较各文化背景下墓碑建筑的异同</li></ul>
+ <div class="sub">主要结论</div><ul>
+ <li>墓碑建筑图像内容与结构之间存在着程式化对应关系</li>
+ <li>墓碑建筑通过建筑结构和图像的象征营造精神空间，满足了澳门地区人们的精神自足；空间的形成基于建筑结构与图像的配置组合</li>
+ <li>通过墓碑建筑结构与图像的相互联系，将宗教人物普通化、将自然崇拜世俗化，为普通人升入天堂提供了文化背景</li>
+ <li>墓碑建筑图像受到外来文化、宗教的影响深远，与中国传统文化融为一体，形成了具有澳门特色的中西融合艺术文化现象</li></ul>
+ <div class="sub">章节结构</div><ul>
+ <li>第一章 前言：研究的概念界定 · 研究动机和意义 · 研究现状 · 研究方法 · 主要创新点</li>
+ <li>第二章 澳门坟场与墓碑建筑概况（含澳门坟场环境、墓碑建筑概述、坟场及墓碑现状）</li>
+ <li>第三章 澳门墓碑建筑图像：图像类型 · 图像应用 · 图像表现形式</li>
+ <li>第四章 澳门墓碑建筑图像意义阐释：自然意义 · 传统意义 · 图像象征意义</li>
+ <li>第五章 澳门墓碑建筑的比较分析：本土中外异同 · 与内地传统墓葬比较 · 与西方基督教墓葬比较</li>
+ <li>第六章 结论 ｜ 参考文献 ｜ 附录：田野考察手稿</li></ul>
+ <a class="dl" href="https://must.primo.exlibrisgroup.com/permalink/853MUST_INST/reglfj/alma991003484771305076" target="_blank">澳门科技大学图书馆学位论文库 · 原文著录 ↓</a>
+ <p class="dim">该研究母题其后延续为一系列国际会议报告与论文：区域国别学·北京论坛 2026、香港岭南大学研究生会议 2026、爱丁堡学生大会 2026（Space and Culture，收录待发于《sine》）、第三届全球南方研究国际学术研讨会，以及"光祈杯"全国高校艺术学科学生论文比赛三等奖论文《澳门墓碑建筑图像研究》。（图书馆著录题名作《澳门墓碑建筑图像研究》。）</p>`,
+ tags:['墓葬建筑','澳门','美术史','图像学','建筑民族志','中西融合']},
+
+/* ---- 技能 ---- */
+sk_lang:{tag:'Languages · 语言能力',title:'多语言能力',
+ meta:[['日语','JLPT N1（2019）'],['日语','大学日语六级 CJT-6（2026）· 大学日语四级（2024）'],['英语','CET-4（511 分）'],['方言','粤语 · 客家话（母语）· 普通话（二级乙等）']],
+ body:`<p>日语能力为研究和翻译实践的核心工具：2019 年通过日本语能力试验（JLPT）N1 级，此后持续以日语进行文献翻译与竞赛实践——包括"人民中国杯"翻译大赛、韩素音国际翻译大赛、辽宁省翻译大赛、"海洋杯"国际翻译大赛等，并承担近代侵华日军书信日文文献的翻译工作。2026 年通过全国大学日语六级（CJT-6）。英语满足学术交流需求（多场国际会议英文口头报告），并获全国文物外交翻译大赛英译汉三等奖。2026 年起修读拉丁语、苏美尔语、阿卡德语等古典语言作为研究工具储备。</p>`,
+ fig:[['assets/n1_2019.jpg','日本語能力試験 N1 · 認定結果証明書（2019）']],
+ tags:['日语','N1','翻译','古典语言']},
+};
+
+/* ============ 交互 ============ */
+const overlay=document.getElementById('overlay'),sheet=document.getElementById('sheet');
+const lightbox=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg');
+
+let CURRENT_ID=null;
+function getD(id){
+  const d=DATA[id]; if(!d) return null;
+  if(LANG==='en' && typeof EN_DATA!=='undefined' && EN_DATA[id]){
+    const e=EN_DATA[id];
+    return {tag:e.tag||d.tag,title:e.title||d.title,meta:e.meta||d.meta,body:e.body||d.body,
+            fig:d.fig,cap:e.cap,tags:e.tags||d.tags};
+  }
+  return d;
+}
+function zoomHint(){return LANG==='en'?'（Click to enlarge）':'（点击放大）'}
+function openDetail(id){
+  const d=getD(id); if(!d) return;
+  CURRENT_ID=id;
+  document.getElementById('dTag').textContent=d.tag;
+  document.getElementById('dTitle').textContent=d.title;
+  const meta=document.getElementById('dMeta'); meta.innerHTML='';
+  (d.meta||[]).forEach(m=>{const b=document.createElement('span');b.innerHTML=`<b>${m[0]}</b> · ${m[1]}`;meta.appendChild(b)});
+  const bodyEl=document.getElementById('dBody');
+  bodyEl.innerHTML=d.body;
+  const fig=document.getElementById('dFig');
+  if(d.fig&&d.fig.length){
+    const caps=(d.cap&&d.cap.length)?d.cap:null;
+    fig.style.display='block';
+    fig.innerHTML='<div class="multi">'+d.fig.map((f,i)=>{
+      const c=caps?(caps[i]||f[1]):f[1];
+      return `<img src="${f[0]}" alt="${c}"><figcaption>${c}　${zoomHint()}</figcaption>`}).join('')+'</div>';
+    fig.querySelectorAll('img').forEach(im=>im.addEventListener('click',e=>{
+      lbImg.src=e.target.src;lightbox.classList.add('open')}));
+  } else fig.style.display='none';
+  if(d.tags){const r=document.createElement('div');r.className='tags-row';
+    d.tags.forEach(t=>{const s=document.createElement('span');s.textContent=t;r.appendChild(s)});bodyEl.appendChild(r)}
+  overlay.classList.add('open');document.body.style.overflow='hidden';
+  overlay.scrollTop=0;
+}
+function closeDetail(){overlay.classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-d]');
+  if(t && !e.target.closest('a')){openDetail(t.dataset.d)}
+});
+document.getElementById('sheetClose').addEventListener('click',closeDetail);
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeDetail()});
+lightbox.addEventListener('click',()=>lightbox.classList.remove('open'));
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){lightbox.classList.contains('open')?lightbox.classList.remove('open'):closeDetail()}
+});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* collapsible award groups */
+document.querySelectorAll('.grp-h.tg').forEach(h=>h.addEventListener('click',()=>{
+  h.parentElement.classList.toggle('open');
+  h.parentElement.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
+}));
+
+/* nav */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>60)});
+const secs=[...document.querySelectorAll('section[id]')];
+addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(scrollY>=s.offsetTop-140)cur=s.id});
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});
+});
+
+/* ============ 中 / 英 切换 ============ */
+const LANG_KEY='resume-lang';
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+let LANG='zh';
+if(/(^|#|&)en($|&)/.test(location.hash)) LANG='en';          /* 支持以 #en 直接打开英文版 */
+else if(lsGet(LANG_KEY)==='en') LANG='en';
+const ZH_DESC=document.querySelector('meta[name=description]').content;
+const EN_DESC='Hongxuan Ji (b.1999) — art historian, cultural-heritage fieldworker and ceramic sculptor. Education, publications, research projects, fieldwork, awards and skills.';
+function norm(s){return (s||'').replace(/[\u201c\u201d\u201e\u300c\u300d]/g,'"').replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').trim()}
+const EN_MAP=new Map();
+if(typeof ZH2EN!=='undefined') Object.keys(ZH2EN).forEach(k=>EN_MAP.set(norm(k),ZH2EN[k]));
+let TEXT_NODES=[];
+function snapshot(){
+  TEXT_NODES=[];
+  const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null);
+  while(tw.nextNode()){
+    const n=tw.currentNode,p=n.parentElement;
+    if(!p) continue;
+    if(/^(SCRIPT|STYLE|NOSCRIPT)$/.test(p.tagName)) continue;
+    if(p.closest('[data-i]')) continue;
+    if(!n.nodeValue.trim()) continue;
+    n._zh=n.nodeValue; TEXT_NODES.push(n);
+  }
+  document.querySelectorAll('[data-i]').forEach(el=>{el._zhHTML=el.innerHTML});
+}
+function keepSpace(orig,val){
+  const lead=(orig.match(/^\s*/)||[''])[0],tail=(orig.match(/\s*$/)||[''])[0];
+  return lead+val+tail;
+}
+function applyLang(lang,initial){
+  LANG=lang;
+  if(!TEXT_NODES.length) snapshot();
+  TEXT_NODES.forEach(n=>{
+    const v=EN_MAP.get(norm(n._zh));
+    n.nodeValue=(lang==='en'&&v!==undefined)?keepSpace(n._zh,v):n._zh;
+  });
+  document.querySelectorAll('[data-i]').forEach(el=>{
+    const v=(typeof EN_UI!=='undefined')?EN_UI[el.dataset.i]:undefined;
+    el.innerHTML=(lang==='en'&&v!==undefined)?v:el._zhHTML;
+  });
+  document.documentElement.lang=(lang==='en')?'en':'zh-CN';
+  document.title=(lang==='en')?'Hongxuan Ji · Academic Curriculum Vitae':'嵇鸿轩 JI HONGXUAN · 学术简历';
+  document.querySelector('meta[name=description]').content=(lang==='en')?EN_DESC:ZH_DESC;
+  document.documentElement.style.setProperty('--pcap',(lang==='en')?"'Hongxuan Ji · b.1999'":"'嵇鸿轩 · 一九九九'");
+  document.querySelectorAll('.lang-sw button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  if(!initial){
+    lsSet(LANG_KEY,lang);
+    if(overlay.classList.contains('open')&&CURRENT_ID) openDetail(CURRENT_ID);
+  }
+}
+document.querySelectorAll('.lang-sw button').forEach(b=>{
+  b.addEventListener('click',()=>{if(LANG!==b.dataset.lang) applyLang(b.dataset.lang)});
+});
+applyLang(LANG,true);
+</script>
+</body>
+</html>
